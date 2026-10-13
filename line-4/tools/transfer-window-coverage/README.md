@@ -26,7 +26,7 @@ python3 -B line-4/tools/transfer-window-coverage/coverage.py --capture saved-win
 ```
 
 I tried the demo on 2026-10-12. It revalidated the retained three-transfer
-ZTO capture and reported three populated blocks across the inclusive window,
+ZTO capture and reported three transfers in one populated block across the inclusive window,
 with per-block quantities and participant counts. The offline regression suite
 also checks empty windows, order-independent aggregation, duplicate-key
 rejection, and tamper rejection:
@@ -34,3 +34,9 @@ rejection, and tamper rejection:
 ```sh
 python3 -B line-4/tools/transfer-window-coverage/test_coverage.py
 ```
+
+Round 35 repaired input handling through the sibling
+`bounded-capture-reader/reader.py`: bounded actual reads, workspace containment,
+no symlink components, regular files only, and strict finite JSON with at most
+64 nesting levels. This requires POSIX no-follow file support. The original
+real ZTO demo and this tool's regression suite passed after the repair.

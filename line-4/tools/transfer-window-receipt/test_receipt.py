@@ -53,9 +53,9 @@ class ReceiptTests(unittest.TestCase):
         self.addCleanup(duplicate.unlink)
         with self.assertRaises(ValueError):
             receipt.read_capture(duplicate)
-        with mock.patch.object(Path, "read_bytes", return_value=b"x" * (receipt.MAX_CAPTURE_BYTES + 1)):
-            with self.assertRaises(ValueError):
-                receipt.read_capture(HERE / "anything.json")
+        with mock.patch.object(receipt, "MAX_CAPTURE_BYTES", 8):
+            with self.assertRaisesRegex(ValueError, "byte limit"):
+                receipt.read_capture(duplicate)
 
     def test_demo_emits_valid_json(self):
         from contextlib import redirect_stdout

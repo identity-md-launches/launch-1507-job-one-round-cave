@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "goal_bytes_unchanged": true,
+  "older_records_unchanged": true,
+  "new_record": 35,
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "PNG RGB",
+  "thumbnail_dimensions": [
+    512,
+    512
+  ],
+  "thumbnail_format": "JPEG",
+  "png_aliases_identical": true,
+  "wall_sha256": "760a340fd05f55ef2aeccf2868494dda713b2a010bb4cb710d24ba86f4a56a15",
+  "tests_passed": 29,
+  "offline_demos_passed": 4,
+  "new_files_under_100000_bytes_outside_artifacts": true,
+  "changed_paths_in_scope": true,
+  "required_pngs_not_git_tracked": true,
+  "unmet_visual_requirements": []
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/bounded-capture-reader/test_reader.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "...............\n----------------------------------------------------------------------\nRan 15 tests in 0.544s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-window-activity/test_activity.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.001s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-window-coverage/test_coverage.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "......\n----------------------------------------------------------------------\nRan 6 tests in 0.004s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-window-receipt/test_receipt.py"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ".....\n----------------------------------------------------------------------\nRan 5 tests in 0.004s\n\nOK\n"
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/bounded-capture-reader/reader.py",
+      "--demo"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"from_block\": 26177298,\n  \"kind\": \"bounded-transfer-capture-check\",\n  \"limitations\": \"Local validation of retained provider evidence; not a fresh chain read, completeness or finality proof.\",\n  \"max_capture_bytes\": 16777216,\n  \"raw_logs_revalidated\": true,\n  \"read_only\": true,\n  \"to_block\": 26177309,\n  \"token\": \"ZTO\",\n  \"transfer_count\": 3\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-window-activity/activity.py",
+      "--demo"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"block_count\": 12,\n  \"empty_block_count\": 11,\n  \"from_block\": 26177298,\n  \"kind\": \"erc20-transfer-window-activity\",\n  \"limitations\": \"Activity is a shape summary of one validated provider window; it does not prove complete history, finality, provider honesty, or a token balance.\",\n  \"longest_empty_run\": 11,\n  \"populated_block_count\": 1,\n  \"read_only\": true,\n  \"runs\": [\n    {\n      \"block_count\": 11,\n      \"from_block\": 26177298,\n      \"state\": \"empty\",\n      \"to_block\": 26177308\n    },\n    {\n      \"block_count\": 1,\n      \"from_block\": 26177309,\n      \"state\": \"populated\",\n      \"to_block\": 26177309\n    }\n  ],\n  \"schema_version\": 1,\n  \"to_block\": 26177309,\n  \"token\": \"ZTO\",\n  \"token_address\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"transfer_count\": 3,\n  \"validated\": true\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-window-coverage/coverage.py",
+      "--demo"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"block_count\": 12,\n  \"decimals\": 18,\n  \"empty_block_count\": 11,\n  \"from_block\": 26177298,\n  \"kind\": \"erc20-transfer-window-coverage\",\n  \"limitations\": \"Coverage describes one validated provider window; empty blocks do not prove complete history or finality, and totals are not a token balance.\",\n  \"populated_block_count\": 1,\n  \"populated_blocks\": [\n    {\n      \"block\": 26177309,\n      \"log_indices\": [\n        642,\n        644,\n        645\n      ],\n      \"raw_value_total\": \"266646694671317841507957\",\n      \"receiver_count\": 3,\n      \"sender_count\": 2,\n      \"transfer_count\": 3,\n      \"value_total\": \"266646.694671317841507957\"\n    }\n  ],\n  \"read_only\": true,\n  \"schema_version\": 1,\n  \"to_block\": 26177309,\n  \"token\": \"ZTO\",\n  \"token_address\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"transfer_count\": 3,\n  \"validated\": true\n}\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-window-receipt/receipt.py",
+      "--demo"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"capture_sha256\": \"deeb398f858972840a8e0308c7af9c7a64d3d1dc2864c78dfde73e108eb4b49d\",\n  \"from_block\": 26177298,\n  \"from_block_anchor\": {\n    \"hash\": \"0x6e2869a87c8365dff42c2c4b480d52bc5fbd09f326cea479038a7c24ed0557de\",\n    \"number\": 26177298\n  },\n  \"kind\": \"erc20-transfer-window-receipt\",\n  \"limitations\": \"This receipt fingerprints one provider capture after local validation; it does not prove completeness, finality, provider honesty, or a balance.\",\n  \"read_only\": true,\n  \"schema_version\": 1,\n  \"to_block\": 26177309,\n  \"to_block_anchor\": {\n    \"hash\": \"0x91e39454315d2b9798ed4feb71d980aba9175a78f75373468d6fab9990f56e15\",\n    \"number\": 26177309\n  },\n  \"token\": \"ZTO\",\n  \"token_address\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"transfer_count\": 3,\n  \"window_sha256\": \"f318b4c43e1a94ddef6bd09d0fc62d1392ac1c04f2a3349ef9876a9e7481774f\"\n}\n",
+    "stderr": ""
+  }
+]

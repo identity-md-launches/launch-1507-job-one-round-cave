@@ -228,3 +228,22 @@
   decoding and JPEG conversion. Reviewed both final images.
 - Installed no dependency. No key, wallet, secret, environment, signature,
   payment, post, transaction submission or deployment was used.
+
+## Round 35
+
+- Preserved GOAL.md and all earlier records. Fixed the activity, coverage and
+  receipt input-reader limitation reported by Gathering 14, retaining their
+  report APIs and strict raw-log revalidation.
+- Reused their sibling crosscheck, transfer decoder and retained real ZTO
+  PublicNode capture. Added a shared bounded, workspace-only regular-file
+  reader with strict JSON parsing. Four suites / 29 tests and four demos passed.
+- Recovered record 34's wall from its public content-addressed URL using a
+  dedicated User-Agent and verified its SHA-256. The installed image tool
+  generated an ochre bowl motif; its first local-target attempt failed with
+  file-not-found, and the second generation succeeded. Used the read
+  `gathering/make_thumbnail.py` standard-library helper for PNG decoding and
+  JPEG encoding, and in-memory pigment compositing for exact preservation.
+- Left only the whole wall aliases and the required JPEG as new pictures.
+  Inspected both final formats; every pixel outside the vacant-rock patch is
+  unchanged. No dependencies installed, keys or wallets touched, environment
+  inspected, transactions signed or sent, payments or deployments made.

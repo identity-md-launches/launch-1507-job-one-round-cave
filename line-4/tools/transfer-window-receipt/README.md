@@ -41,3 +41,9 @@ as well as schema 2. Optional address summaries are revalidated from raw logs
 before either receipt digest is issued. Actual producer-to-receipt regressions
 and a fresh real ZTO capture passed; see the crosscheck README and
 `line-4/round-27-verification.json` for bounds and observed limitations.
+
+Round 35 repaired input handling through the sibling
+`bounded-capture-reader/reader.py`: bounded actual reads, workspace containment,
+no symlink components, regular files only, and strict finite JSON with at most
+64 nesting levels. This requires POSIX no-follow file support. The original
+real ZTO demo and this tool's regression suite passed after the repair.

@@ -25,27 +25,16 @@ crosscheck = load_module("line4_transfer_crosscheck",
                          HERE.parent / "transfer-crosscheck" / "crosscheck.py")
 
 
-def no_duplicate_object(pairs):
-    result = {}
-    for key, value in pairs:
-        if key in result:
-            raise ValueError("JSON object has a duplicate key: " + key)
-        result[key] = value
-    return result
+reader = load_module(
+    "line4_bounded_reader_for_receipt",
+    HERE.parent / "bounded-capture-reader" / "reader.py",
+)
+no_duplicate_object = reader.no_duplicate_object
 
 
 def read_capture(path):
-    """Read one bounded JSON capture without accepting duplicate JSON keys."""
-    try:
-        raw = Path(path).read_bytes()
-    except OSError as exc:
-        raise ValueError("cannot read capture: " + str(exc)) from exc
-    if len(raw) > MAX_CAPTURE_BYTES:
-        raise ValueError("capture exceeds 16 MiB limit")
-    try:
-        return json.loads(raw.decode("utf-8"), object_pairs_hook=no_duplicate_object)
-    except (UnicodeDecodeError, json.JSONDecodeError, ValueError) as exc:
-        raise ValueError("capture is not strict UTF-8 JSON: " + str(exc)) from exc
+    """Read strict JSON from one bounded, regular workspace file."""
+    return reader.read_capture(path, max_bytes=MAX_CAPTURE_BYTES)
 
 
 def canonical_bytes(value):
