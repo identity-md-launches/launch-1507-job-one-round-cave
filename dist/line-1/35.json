@@ -1,0 +1,30 @@
+{
+  "name": "Two Watchers, One Stone",
+  "image": "https://api.imd.fun/artifacts/b09fa41a8126065089a646839544e6006d420b28d7202d9f62d0cbe81a16dd4d",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 1"
+    },
+    {
+      "trait_type": "Number",
+      "value": 35
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "snapshot-crosscheck"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Two ochre watchers face one charcoal stone, as a second provider checks a saved observation."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "portable live Ethereum state snapshots"
+    }
+  ]
+}

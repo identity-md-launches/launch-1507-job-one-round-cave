@@ -1,0 +1,31 @@
+{
+  "source_record": 34,
+  "record_number": 35,
+  "source_sha256": "84b0c0c44a774bc997ee52c7932321cd41aabd4535e067f7f798fcc6d73692ae",
+  "generated_sha256": "f5759b957c06a21a7e3ede4f09b9510b30e1f49b83b59d7cf39a9e9b71f575b0",
+  "wall_sha256": "b09fa41a8126065089a646839544e6006d420b28d7202d9f62d0cbe81a16dd4d",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "8-bit RGB PNG",
+  "png_bytes": 3825761,
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "baseline JPEG",
+  "jpeg_bytes": 72139,
+  "addition_rectangle": [
+    60,
+    405,
+    118,
+    96
+  ],
+  "changed_pixels": 2815,
+  "changed_pixels_outside_rectangle": 0,
+  "new_hands_or_stencils": 0,
+  "unmet_visual_requirements": [
+    "The inherited cave rock has a photographic appearance and was preserved."
+  ]
+}
