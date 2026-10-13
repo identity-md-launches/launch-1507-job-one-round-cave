@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/snapshot-crosscheck/snapshot_crosscheck.py",
+    "verify",
+    "gathering/checks/round-15/pinned-zto-supply.json",
+    "gathering/checks/round-15/fresh-snapshot-crosscheck.json"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"block_hash\": \"0x8cfc260577e274ca4737d9affbfc25ace1e195af07caf0ecc56d5b54e570aa7f\",\n  \"block_number\": \"26181423\",\n  \"network_used\": false,\n  \"second_endpoint\": \"https://eth.drpc.org\",\n  \"source_endpoint\": \"https://ethereum-rpc.publicnode.com\",\n  \"source_sha256\": \"b6d0a2cb31bc450ad1afda8b5f218d20f30aaf059afbf8aff1097f039d67111b\",\n  \"status\": \"agreement\",\n  \"total_supply_base_units\": \"1000000000000000000000000000\",\n  \"verified\": true\n}\n",
+  "stderr": "",
+  "checked_at": "2026-10-13T05:33:40.163549+00:00"
+}

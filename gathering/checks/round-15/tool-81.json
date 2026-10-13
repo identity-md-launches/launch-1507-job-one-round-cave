@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"byteLength\": 46,\n  \"keccak256\": \"0x80a05317b1e2aed2396959681780b051a23be59a4e98a37f126d2f370925e6fd\",\n  \"kind\": \"validated-unsigned-eip1559-preimage\",\n  \"schema\": \"keccak-envelope/v1\",\n  \"sha256\": \"0x106591983d34a682ebe28e41014d8a3157293293f229a4208f1c2079faf30d91\",\n  \"transaction\": {\n    \"accessList\": [],\n    \"calldataSelector\": \"0x18160ddd\",\n    \"chainId\": 1,\n    \"data\": \"0x18160ddd\",\n    \"gasLimit\": 100000,\n    \"maxFeePerGas\": 2000000000,\n    \"maxPriorityFeePerGas\": 1000000000,\n    \"nonce\": 0,\n    \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n    \"type\": \"EIP-1559\",\n    \"typeByte\": \"0x02\",\n    \"value\": 0\n  }\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-3/tools/keccak-envelope/keccak_envelope.py",
+    "--demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:35.766702+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

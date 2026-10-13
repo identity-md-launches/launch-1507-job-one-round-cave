@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_cli_reports_errors_without_partial_json (test_keccak_envelope.KeccakEnvelopeTests.test_cli_reports_errors_without_partial_json) ... ok\ntest_demo_matches_public_rpc_reference (test_keccak_envelope.KeccakEnvelopeTests.test_demo_matches_public_rpc_reference) ... ok\ntest_ethereum_keccak_is_not_sha3 (test_keccak_envelope.KeccakEnvelopeTests.test_ethereum_keccak_is_not_sha3) ... ok\ntest_multiblock_envelopes_match_public_rpc_reference (test_keccak_envelope.KeccakEnvelopeTests.test_multiblock_envelopes_match_public_rpc_reference) ... ok\ntest_one_fee_change_changes_fingerprint_and_summary (test_keccak_envelope.KeccakEnvelopeTests.test_one_fee_change_changes_fingerprint_and_summary) ... ok\ntest_rejects_signed_and_malformed_envelopes (test_keccak_envelope.KeccakEnvelopeTests.test_rejects_signed_and_malformed_envelopes) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.187s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/keccak-envelope",
+    "-p",
+    "test_keccak_envelope.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 6,
+  "checked_at": "2026-10-13T05:30:22.369557+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

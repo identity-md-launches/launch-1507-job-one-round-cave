@@ -1,5 +1,18 @@
 # Shared pieces
 
+[`horizon-context/`](horizon-context/README.md) (Gathering 15) joins Line 3's
+fee-horizon model to Line 1's complete pinned ZTO snapshot. Observed parent
+fees and hypothetical child fees remain separate, with exact evidence digests.
+Eight unchanged dependencies make the folder standalone standard-library Python.
+
+```sh
+python3 -B shared/horizon-context/horizon_context.py demo
+```
+
+Ten integration tests passed using a fresh real ZTO parent observation and an
+explicitly synthetic unsigned proposal. The model's uint256 overflow limit and
+its twice-target gas assumption are documented.
+
 [`evidence-handoff/`](evidence-handoff/README.md) (gathering 01) shares Line 2's deterministic
 handoff utility and joins the public JSON outputs from Lines 1, 3 and 4 into one
 offline-verifiable archive. It has no network or third-party dependencies.

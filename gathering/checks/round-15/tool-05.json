@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_all_calls_use_one_hash_and_canonical_flag (test_hash_snapshot.Tests.test_all_calls_use_one_hash_and_canonical_flag) ... ok\ntest_cli_capture_failure_emits_no_partial_snapshot (test_hash_snapshot.Tests.test_cli_capture_failure_emits_no_partial_snapshot) ... ok\ntest_cli_offline_and_controlled_failures (test_hash_snapshot.Tests.test_cli_offline_and_controlled_failures) ... ok\ntest_combined_bundle_bound (test_hash_snapshot.Tests.test_combined_bundle_bound) ... ok\ntest_explicit_number_roundtrip (test_hash_snapshot.Tests.test_explicit_number_roundtrip) ... ok\ntest_explicit_wrong_number_stops_before_calls (test_hash_snapshot.Tests.test_explicit_wrong_number_stops_before_calls) ... ok\ntest_generic_call_retains_raw_bytes (test_hash_snapshot.Tests.test_generic_call_retains_raw_bytes) ... ok\ntest_hash_reference_tampering_rejected_offline (test_hash_snapshot.Tests.test_hash_reference_tampering_rejected_offline) ... ok\ntest_invalid_plan_and_tag_before_network (test_hash_snapshot.Tests.test_invalid_plan_and_tag_before_network) ... ok\ntest_json_duplicate_nonfinite_and_size_rejected (test_hash_snapshot.Tests.test_json_duplicate_nonfinite_and_size_rejected) ... ok\ntest_public_read_rejects_unsafe_requests_before_opener (test_hash_snapshot.Tests.test_public_read_rejects_unsafe_requests_before_opener) ... ok\ntest_real_offline_observation (test_hash_snapshot.Tests.test_real_offline_observation) ... ok\ntest_reorg_parent_timestamp_or_number_change_rejected (test_hash_snapshot.Tests.test_reorg_parent_timestamp_or_number_change_rejected) ... ok\ntest_response_envelope_errors_rejected (test_hash_snapshot.Tests.test_response_envelope_errors_rejected) ... ok\ntest_result_and_abi_bounds (test_hash_snapshot.Tests.test_result_and_abi_bounds) ... ok\ntest_rpc_failure_no_number_fallback_or_snapshot (test_hash_snapshot.Tests.test_rpc_failure_no_number_fallback_or_snapshot) ... ok\ntest_snapshot_context_tampering_rejected (test_hash_snapshot.Tests.test_snapshot_context_tampering_rejected) ... ok\ntest_transport_bound_and_duplicate_envelope (test_hash_snapshot.Tests.test_transport_bound_and_duplicate_envelope) ... ok\ntest_transport_has_header_no_environment_proxy_and_no_redirect (test_hash_snapshot.Tests.test_transport_has_header_no_environment_proxy_and_no_redirect) ... ok\ntest_wrong_chain_stops_before_anchor_or_calls (test_hash_snapshot.Tests.test_wrong_chain_stops_before_anchor_or_calls) ... ok\n\n----------------------------------------------------------------------\nRan 20 tests in 0.077s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/hash-snapshot",
+    "-p",
+    "test_hash_snapshot.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 20,
+  "checked_at": "2026-10-13T05:29:58.257963+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"block_hash\": \"0xfffa2f6981064c0c17c939eae510a1d8e9add2b9775e1dab07cf4f2b196dae27\",\n  \"block_number\": \"26180977\",\n  \"network_used\": false,\n  \"second_endpoint\": \"https://eth.drpc.org\",\n  \"source_endpoint\": \"https://ethereum-rpc.publicnode.com\",\n  \"source_sha256\": \"2c96bd645a2147861f2e37f82a96da461c84c912be673cf856033db2b3bd0fcb\",\n  \"status\": \"agreement\",\n  \"total_supply_base_units\": \"1000000000000000000000000000\",\n  \"verified\": true\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/snapshot-crosscheck/snapshot_crosscheck.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:34.992267+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

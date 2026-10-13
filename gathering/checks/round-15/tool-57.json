@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n  \"archive_verified\": true,\n  \"changed\": [],\n  \"counts\": {\n    \"changed\": 0,\n    \"missing_from_source\": 0,\n    \"omitted_from_archive\": 0,\n    \"unchanged\": 2\n  },\n  \"demo\": \"real inherited archive checked against its two source files\",\n  \"format\": \"handoff-source-check-v1\",\n  \"matches_source\": true,\n  \"missing_from_source\": [],\n  \"note\": \"Byte equality is not authenticity or a safety review. Empty directories are not payloads. Use a stable workspace; this is not an atomic snapshot.\",\n  \"omitted_from_archive\": [],\n  \"trusted_digest_matched\": false,\n  \"unchanged\": [\n    \"README.md\",\n    \"handoff.py\"\n  ]\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-source/source_check.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:31.638089+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

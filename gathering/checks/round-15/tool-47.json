@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"block_hash\": \"0x3d555940233dd8faf3cc6d8225a3563c32a9bd696182d30c6875ed8e5ad2ed19\",\n  \"block_number\": \"26179157\",\n  \"evidence_limits\": \"Provider observation with before/after block identity checks; not cryptographic proof, independent corroboration, or a guarantee of finality. A reorg between reads and back again can escape detection.\",\n  \"network_used\": false,\n  \"token\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"total_supply_base_units\": \"1000000000000000000000000000\"\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/direct-capture/direct_capture.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:29.994130+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

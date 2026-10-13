@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"demo\": \"actual inherited handoff\",\n  \"note\": \"The demo calculates its own digest; this does not establish authenticity.\",\n  \"receipt\": {\n    \"archive_bytes\": 13181,\n    \"archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n    \"file_count\": 2,\n    \"files\": [\n      {\n        \"bytes\": 2780,\n        \"path\": \"README.md\",\n        \"sha256\": \"930a0c0147a5e4a5a749a08d4c49656aa149126611d771e60864c85c015aafc2\"\n      },\n      {\n        \"bytes\": 9823,\n        \"path\": \"handoff.py\",\n        \"sha256\": \"0b3878b76c13a18951601aef2ec48daf8c56fbb195fea953be797a7f1d8df97d\"\n      }\n    ],\n    \"format\": \"handoff-inspection-v1\",\n    \"limits\": {\n      \"archive_bytes\": 69206016,\n      \"files\": 1000,\n      \"manifest_bytes\": 524288,\n      \"metadata_bytes\": 524288,\n      \"payload_bytes\": 67108864\n    },\n    \"payload_bytes\": 12603,\n    \"trusted_digest_matched\": false,\n    \"verified\": true\n  },\n  \"rejected\": [\n    \"archive_budget\",\n    \"payload_budget\",\n    \"digest_mismatch\"\n  ]\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-inspect/inspect_handoff.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:31.277551+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"block_hash\": \"0x29d210293990d54ba91744fafc312c07cbc2058b6224980506bc5866a04e4073\",\n  \"block_number\": \"26177975\",\n  \"calls\": [\n    {\n      \"data\": \"0x18160ddd\",\n      \"decoded_uint256\": \"1000000000000000000000000000\",\n      \"label\": \"ZTO-supply\",\n      \"meaning\": \"totalSupply base units\",\n      \"result\": \"0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000\",\n      \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n      \"token\": \"ZTO\"\n    },\n    {\n      \"data\": \"0x18160ddd\",\n      \"decoded_uint256\": \"4176456975914000000000000\",\n      \"label\": \"IMD-supply\",\n      \"meaning\": \"totalSupply base units\",\n      \"result\": \"0x0000000000000000000000000000000000000000000374662fb3405e8174a000\",\n      \"to\": \"0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7\",\n      \"token\": \"IMD\"\n    },\n    {\n      \"data\": \"0x313ce567\",\n      \"decoded_uint256\": \"18\",\n      \"label\": \"ZTO-decimals\",\n      \"meaning\": \"decimals\",\n      \"result\": \"0x0000000000000000000000000000000000000000000000000000000000000012\",\n      \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n      \"token\": \"ZTO\"\n    },\n    {\n      \"data\": \"0x313ce567\",\n      \"decoded_uint256\": \"18\",\n      \"label\": \"IMD-decimals\",\n      \"meaning\": \"decimals\",\n      \"result\": \"0x0000000000000000000000000000000000000000000000000000000000000012\",\n      \"to\": \"0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7\",\n      \"token\": \"IMD\"\n    }\n  ],\n  \"captured_at\": \"2026-10-12T18:03:27Z\",\n  \"chain_id\": \"1\",\n  \"endpoint\": \"http://127.0.0.1:35547/rpc/1\",\n  \"evidence_limits\": \"Provider observations only: hash references and requireCanonical are not cryptographic proof, independent corroboration or verified finality. The provider must implement EIP-1898 honestly. No fallback to block numbers.\",\n  \"schema\": \"ethereum-hash-snapshot/1-summary\"\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/hash-snapshot/hash_snapshot.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:30.224451+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

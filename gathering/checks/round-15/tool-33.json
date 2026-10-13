@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_access_list_preserves_order_and_duplicates (test_rpc_reader.ReaderTests.test_access_list_preserves_order_and_duplicates) ... ok\ntest_cli_modes_exit_codes_and_no_partial_output (test_rpc_reader.ReaderTests.test_cli_modes_exit_codes_and_no_partial_output) ... ok\ntest_data_address_and_creation_are_unambiguous (test_rpc_reader.ReaderTests.test_data_address_and_creation_are_unambiguous) ... ok\ntest_demo_matches_existing_rlp_inspection (test_rpc_reader.ReaderTests.test_demo_matches_existing_rlp_inspection) ... ok\ntest_duplicate_keys_rejected_at_every_object_depth (test_rpc_reader.ReaderTests.test_duplicate_keys_rejected_at_every_object_depth) ... ok\ntest_each_field_required_no_implicit_defaults (test_rpc_reader.ReaderTests.test_each_field_required_no_implicit_defaults) ... ok\ntest_input_alias_and_ambiguous_alias_rejection (test_rpc_reader.ReaderTests.test_input_alias_and_ambiguous_alias_rejection) ... ok\ntest_json_limits_malformed_and_non_objects (test_rpc_reader.ReaderTests.test_json_limits_malformed_and_non_objects) ... ok\ntest_labels_approval_warning_and_fee_order_survive (test_rpc_reader.ReaderTests.test_labels_approval_warning_and_fee_order_survive) ... ok\ntest_quantities_are_exact_bounded_hex_strings (test_rpc_reader.ReaderTests.test_quantities_are_exact_bounded_hex_strings) ... ok\ntest_seeded_numeric_roundtrips_against_independent_expected_values (test_rpc_reader.ReaderTests.test_seeded_numeric_roundtrips_against_independent_expected_values) ... ok\ntest_signature_sender_wrapper_and_extra_fields_rejected (test_rpc_reader.ReaderTests.test_signature_sender_wrapper_and_extra_fields_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.125s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/rpc-unsigned-reader",
+    "-p",
+    "test_rpc_reader.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 12,
+  "checked_at": "2026-10-13T05:30:23.055493+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n  \"archive_verified\": true,\n  \"demo\": \"real inherited handoff screened without extraction\",\n  \"file_count\": 2,\n  \"format\": \"handoff-portability-v1\",\n  \"issue_count\": 0,\n  \"issues\": [],\n  \"note\": \"Conservative filename screen, not an OS extraction test, software safety review or sender authentication. Each original component is screened against both 255 UTF-8 bytes and 255 UTF-16 units. Relative paths over 240 UTF-16 units are flagged without knowing the eventual destination prefix.\",\n  \"portable\": true,\n  \"profile\": \"conservative-filenames-v2\",\n  \"trusted_digest_matched\": false\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-portability/portability.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:31.826793+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_changed_same_size (test_source.SourceTests.test_changed_same_size) ... ok\ntest_cli_match_mismatch_invalid (test_source.SourceTests.test_cli_match_mismatch_invalid) ... ok\ntest_directory_budget (test_source.SourceTests.test_directory_budget) ... ok\ntest_empty_directories_not_payload (test_source.SourceTests.test_empty_directories_not_payload) ... ok\ntest_empty_source (test_source.SourceTests.test_empty_source) ... ok\ntest_equal (test_source.SourceTests.test_equal) ... ok\ntest_fifo (test_source.SourceTests.test_fifo) ... ok\ntest_file_count (test_source.SourceTests.test_file_count) ... ok\ntest_invalid_archive_before_source_scan (test_source.SourceTests.test_invalid_archive_before_source_scan) ... ok\ntest_metadata_budget (test_source.SourceTests.test_metadata_budget) ... ok\ntest_missing_and_omitted (test_source.SourceTests.test_missing_and_omitted) ... ok\ntest_payload_budget (test_source.SourceTests.test_payload_budget) ... ok\ntest_repeat_receipt (test_source.SourceTests.test_repeat_receipt) ... ok\ntest_source_reserved_manifest_is_omitted (test_source.SourceTests.test_source_reserved_manifest_is_omitted) ... ok\ntest_symlink_directory (test_source.SourceTests.test_symlink_directory) ... ok\ntest_symlink_file (test_source.SourceTests.test_symlink_file) ... ok\ntest_symlink_root (test_source.SourceTests.test_symlink_root) ... ok\ntest_tree_mutation (test_source.SourceTests.test_tree_mutation) ... ok\ntest_trusted_digest (test_source.SourceTests.test_trusted_digest) ... ok\ntest_unsafe_source_paths (test_source.SourceTests.test_unsafe_source_paths) ... ok\ntest_utf8 (test_source.SourceTests.test_utf8) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.156s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-source",
+    "-p",
+    "test_source.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 21,
+  "checked_at": "2026-10-13T05:30:17.869499+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

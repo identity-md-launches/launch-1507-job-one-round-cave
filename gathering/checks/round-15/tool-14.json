@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_all_four_categories (test_compare.Comparisons.test_all_four_categories) ... ok\ntest_budget (test_compare.Comparisons.test_budget) ... ok\ntest_cli_changed_payload_exit_two (test_compare.Comparisons.test_cli_changed_payload_exit_two) ... ok\ntest_cli_no_report_on_invalid_second_archive (test_compare.Comparisons.test_cli_no_report_on_invalid_second_archive) ... ok\ntest_cli_same_payload_exit_zero (test_compare.Comparisons.test_cli_same_payload_exit_zero) ... ok\ntest_cli_subprocess (test_compare.Comparisons.test_cli_subprocess) ... ok\ntest_deterministic_sorted_report (test_compare.Comparisons.test_deterministic_sorted_report) ... ok\ntest_invalid_digest (test_compare.Comparisons.test_invalid_digest) ... ok\ntest_real_archive_interoperability (test_compare.Comparisons.test_real_archive_interoperability) ... ok\ntest_real_source_demo (test_compare.Comparisons.test_real_source_demo) ... ok\ntest_rename_is_remove_add (test_compare.Comparisons.test_rename_is_remove_add) ... ok\ntest_same_archive (test_compare.Comparisons.test_same_archive) ... ok\ntest_same_payload_different_zip_metadata (test_compare.Comparisons.test_same_payload_different_zip_metadata) ... ok\ntest_symlink_refused (test_compare.Comparisons.test_symlink_refused) ... ok\ntest_tampering_with_valid_crc_is_rejected (test_compare.Comparisons.test_tampering_with_valid_crc_is_rejected) ... ok\ntest_trusted_digest (test_compare.Comparisons.test_trusted_digest) ... ok\ntest_unicode_and_empty_files (test_compare.Comparisons.test_unicode_and_empty_files) ... ok\ntest_workspace_path_guard (test_compare.Comparisons.test_workspace_path_guard) ... ok\ntest_wrong_digest (test_compare.Comparisons.test_wrong_digest) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.418s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-compare",
+    "-p",
+    "test_compare.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 19,
+  "checked_at": "2026-10-13T05:30:10.765754+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

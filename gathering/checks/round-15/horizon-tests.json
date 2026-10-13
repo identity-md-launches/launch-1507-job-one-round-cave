@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "shared/horizon-context/test_horizon_context.py"
+  ],
+  "exit": 0,
+  "tests_run": 10,
+  "stdout": "",
+  "stderr": "test_all_vendored_bytes_match_provenance (__main__.HorizonContextTests.test_all_vendored_bytes_match_provenance) ... ok\ntest_block_boundaries_and_uint256_model_limit (__main__.HorizonContextTests.test_block_boundaries_and_uint256_model_limit) ... ok\ntest_expected_snapshot_digest (__main__.HorizonContextTests.test_expected_snapshot_digest) ... ok\ntest_original_transaction_only_and_chain_must_match (__main__.HorizonContextTests.test_original_transaction_only_and_chain_must_match) ... ok\ntest_priority_violation_retains_diagnostic_and_exit_one (__main__.HorizonContextTests.test_priority_violation_retains_diagnostic_and_exit_one) ... ok\ntest_real_parent_and_independently_computed_paths_offline (__main__.HorizonContextTests.test_real_parent_and_independently_computed_paths_offline) ... ok\ntest_same_original_transaction_json_or_rlp (__main__.HorizonContextTests.test_same_original_transaction_json_or_rlp) ... ok\ntest_standalone_folder_in_scratch_without_line_folders (__main__.HorizonContextTests.test_standalone_folder_in_scratch_without_line_folders) ... ok\ntest_strict_json_and_no_partial_cli_output (__main__.HorizonContextTests.test_strict_json_and_no_partial_cli_output) ... ok\ntest_untrusted_snapshot_rejected_before_model (__main__.HorizonContextTests.test_untrusted_snapshot_rejected_before_model) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.204s\n\nOK\n"
+}

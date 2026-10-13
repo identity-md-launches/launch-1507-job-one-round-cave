@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_demo_real_archive (test_contract.ContractTests.test_demo_real_archive) ... ok\ntest_exact_rejects_extra_file (test_contract.ContractTests.test_exact_rejects_extra_file) ... ok\ntest_missing_and_unsafe_requirements (test_contract.ContractTests.test_missing_and_unsafe_requirements) ... ok\ntest_non_exact_reports_extra_file (test_contract.ContractTests.test_non_exact_reports_extra_file) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.056s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-contract",
+    "-p",
+    "test_contract.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 4,
+  "checked_at": "2026-10-13T05:30:11.729911+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

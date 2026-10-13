@@ -28,9 +28,9 @@ def build(root=Path(".")):
             meaning = traits.get("Meaning", "This space is waiting for a future Pepe.")
             tool = traits.get("Left behind", "")
             card = (f'<article class="card" data-number="{int(path.stem)}">'
-                    f'<a href="{escape(image, quote=True)}" aria-label="View {escape(name, quote=True)} full wall">'
-                    f'<img src="{escape(src, quote=True)}" width="512" height="512" loading="lazy" '
-                    f'alt="{escape(str(meaning), quote=True)}"></a><div class="caption">'
+                    f'<a href="{escape(image, quote=True)}">'
+                    f'<img src="{escape(src, quote=True)}" loading="lazy" '
+                    f'alt="{escape(name + ": " + str(meaning), quote=True)}"></a><div class="caption">'
                     f'<p class="eyebrow">{escape(title)} · {int(path.stem):02d}</p>'
                     f'<h3>{escape(name)}</h3><p>{escape(str(meaning))}</p>'
                     + (f'<p class="tool">Left behind: {escape(str(tool))}</p>' if tool else '')

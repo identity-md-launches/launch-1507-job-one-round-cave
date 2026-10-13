@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_access_duplicates_charged_without_deduplication (test_gas_budget.GasTests.test_access_duplicates_charged_without_deduplication) ... ok\ntest_bad_profiles_signed_input_and_integers (test_gas_budget.GasTests.test_bad_profiles_signed_input_and_integers) ... ok\ntest_cli_exit_codes_and_clean_malformed_output (test_gas_budget.GasTests.test_cli_exit_codes_and_clean_malformed_output) ... ok\ntest_cli_requires_explicit_profile (test_gas_budget.GasTests.test_cli_requires_explicit_profile) ... ok\ntest_creation_prague_floor_can_dominate (test_gas_budget.GasTests.test_creation_prague_floor_can_dominate) ... ok\ntest_creation_size_boundary_not_applied_to_calls (test_gas_budget.GasTests.test_creation_size_boundary_not_applied_to_calls) ... ok\ntest_creation_word_rounding_and_fork_change (test_gas_budget.GasTests.test_creation_word_rounding_and_fork_change) ... ok\ntest_demo_agrees_across_formats (test_gas_budget.GasTests.test_demo_agrees_across_formats) ... ok\ntest_empty_call_and_creation_all_profiles (test_gas_budget.GasTests.test_empty_call_and_creation_all_profiles) ... ok\ntest_fee_violation_retains_report (test_gas_budget.GasTests.test_fee_violation_retains_report) ... ok\ntest_minimum_exact_boundary_and_shortfall (test_gas_budget.GasTests.test_minimum_exact_boundary_and_shortfall) ... ok\ntest_same_slot_different_address_is_two_pairs (test_gas_budget.GasTests.test_same_slot_different_address_is_two_pairs) ... ok\ntest_seeded_independent_gas_calculations (test_gas_budget.GasTests.test_seeded_independent_gas_calculations) ... ok\ntest_zero_nonzero_costs_and_prague_floor_not_sum (test_gas_budget.GasTests.test_zero_nonzero_costs_and_prague_floor_not_sum) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.127s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/gas-budget",
+    "-p",
+    "test_gas_budget.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 14,
+  "checked_at": "2026-10-13T05:30:22.035895+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

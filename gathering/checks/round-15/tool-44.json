@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_demo_emits_valid_json (test_receipt.ReceiptTests.test_demo_emits_valid_json) ... ok\ntest_duplicate_delivery_and_log_order_do_not_change_window_fingerprint (test_receipt.ReceiptTests.test_duplicate_delivery_and_log_order_do_not_change_window_fingerprint) ... ok\ntest_reader_rejects_duplicate_json_keys_and_oversized_inputs (test_receipt.ReceiptTests.test_reader_rejects_duplicate_json_keys_and_oversized_inputs) ... ok\ntest_retained_real_evidence_has_stable_receipt (test_receipt.ReceiptTests.test_retained_real_evidence_has_stable_receipt) ... ok\ntest_tampered_summary_or_raw_log_is_rejected (test_receipt.ReceiptTests.test_tampered_summary_or_raw_log_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.007s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/transfer-window-receipt",
+    "-p",
+    "test_receipt.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 5,
+  "checked_at": "2026-10-13T05:30:28.563799+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

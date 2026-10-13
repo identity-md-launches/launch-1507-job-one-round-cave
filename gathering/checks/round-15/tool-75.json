@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"block_count\": 12,\n  \"decimals\": 18,\n  \"empty_block_count\": 11,\n  \"from_block\": 26177298,\n  \"kind\": \"erc20-transfer-window-coverage\",\n  \"limitations\": \"Coverage describes one validated provider window; empty blocks do not prove complete history or finality, and totals are not a token balance.\",\n  \"populated_block_count\": 1,\n  \"populated_blocks\": [\n    {\n      \"block\": 26177309,\n      \"log_indices\": [\n        642,\n        644,\n        645\n      ],\n      \"raw_value_total\": \"266646694671317841507957\",\n      \"receiver_count\": 3,\n      \"sender_count\": 2,\n      \"transfer_count\": 3,\n      \"value_total\": \"266646.694671317841507957\"\n    }\n  ],\n  \"read_only\": true,\n  \"schema_version\": 1,\n  \"to_block\": 26177309,\n  \"token\": \"ZTO\",\n  \"token_address\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"transfer_count\": 3,\n  \"validated\": true\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/transfer-window-coverage/coverage.py",
+    "--demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:34.191660+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

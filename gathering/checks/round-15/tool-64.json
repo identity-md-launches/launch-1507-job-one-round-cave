@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"accessList\": [],\n  \"calldataSelector\": \"0x18160ddd\",\n  \"chainId\": 1,\n  \"data\": \"0x18160ddd\",\n  \"gasLimit\": 100000,\n  \"maxFeePerGas\": 2000000000,\n  \"maxPriorityFeePerGas\": 1000000000,\n  \"nonce\": 0,\n  \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"type\": \"EIP-1559\",\n  \"typeByte\": \"0x02\",\n  \"value\": 0\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-3/tools/zto-eip1559-decoder/tx_decode.py",
+    "--demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:32.735108+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

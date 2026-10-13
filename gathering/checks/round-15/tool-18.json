@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n  \"destination\": \"test/scratch/line2-landing-tests/received\",\n  \"existing_name_profile\": \"NFC-casefold-trim-space-dot-v1\",\n  \"file_count\": 2,\n  \"format\": \"handoff-landing-v2\",\n  \"name_scan_limits\": {\n    \"per_directory\": 4096,\n    \"total\": 20000\n  },\n  \"names_scanned\": 11,\n  \"note\": \"Read-only preflight of named workspace paths at one instant; no extraction, atomic reservation, sender authentication or payload safety claim. Existing names use a conservative NFC/casefold/trailing-space-dot screen, not every filesystem's equivalence rules. Safe scans require POSIX dir_fd support.\",\n  \"path_issues\": [\n    {\n      \"blocking_path\": \"test/scratch/line2-landing-tests/received/readme.MD\",\n      \"kind\": \"existing-name-collision\",\n      \"path\": \"README.md\"\n    }\n  ],\n  \"portability_issues\": [],\n  \"portability_profile\": \"conservative-filenames-v2\",\n  \"ready\": false,\n  \"trusted_digest_matched\": false\n}\n{\n  \"archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n  \"destination\": \"test/scratch/line2-landing-tests/received\",\n  \"existing_name_profile\": \"NFC-casefold-trim-space-dot-v1\",\n  \"file_count\": 2,\n  \"format\": \"handoff-landing-v2\",\n  \"name_scan_limits\": {\n    \"per_directory\": 4096,\n    \"total\": 20000\n  },\n  \"names_scanned\": 9,\n  \"note\": \"Read-only preflight of named workspace paths at one instant; no extraction, atomic reservation, sender authentication or payload safety claim. Existing names use a conservative NFC/casefold/trailing-space-dot screen, not every filesystem's equivalence rules. Safe scans require POSIX dir_fd support.\",\n  \"path_issues\": [],\n  \"portability_issues\": [],\n  \"portability_profile\": \"conservative-filenames-v2\",\n  \"ready\": true,\n  \"trusted_digest_matched\": false\n}\n",
+  "stderr": "test_alias_ancestor_is_not_traversed (test_landing.LandingTests.test_alias_ancestor_is_not_traversed) ... ok\ntest_bad_archive_or_destination_has_no_report (test_landing.LandingTests.test_bad_archive_or_destination_has_no_report) ... ok\ntest_demo_is_read_only (test_landing.LandingTests.test_demo_is_read_only) ... ok\ntest_exact_name_does_not_hide_alias (test_landing.LandingTests.test_exact_name_does_not_hide_alias) ... ok\ntest_internal_collision_and_portability (test_landing.LandingTests.test_internal_collision_and_portability) ... ok\ntest_nested_alias (test_landing.LandingTests.test_nested_alias) ... ok\ntest_nested_file_as_directory (test_landing.LandingTests.test_nested_file_as_directory) ... ok\ntest_occupied_file_and_directory (test_landing.LandingTests.test_occupied_file_and_directory) ... ok\ntest_public_receipt_api_refuses_unsafe_names_before_open (test_landing.LandingTests.test_public_receipt_api_refuses_unsafe_names_before_open) ... ok\ntest_real_archive_case_alias_blocks_cli (test_landing.LandingTests.test_real_archive_case_alias_blocks_cli) ... ok\ntest_real_archive_on_new_destination (test_landing.LandingTests.test_real_archive_on_new_destination) ... ok\ntest_scan_limits_fail_closed (test_landing.LandingTests.test_scan_limits_fail_closed) ... ok\ntest_scan_refuses_symlink_parent (test_landing.LandingTests.test_scan_refuses_symlink_parent) ... ok\ntest_scans_are_cached_and_do_not_read_contents (test_landing.LandingTests.test_scans_are_cached_and_do_not_read_contents) ... ok\ntest_symlink_and_file_ancestors (test_landing.LandingTests.test_symlink_and_file_ancestors) ... ok\ntest_unicode_and_trailing_aliases (test_landing.LandingTests.test_unicode_and_trailing_aliases) ... ok\ntest_unsupported_safe_scan_fails_closed (test_landing.LandingTests.test_unsupported_safe_scan_fails_closed) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.138s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-landing",
+    "-p",
+    "test_landing.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 17,
+  "checked_at": "2026-10-13T05:30:12.379643+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

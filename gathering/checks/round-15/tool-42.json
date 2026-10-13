@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_demo_command_emits_json (test_coverage.CoverageTests.test_demo_command_emits_json) ... ok\ntest_demo_has_real_events_and_empty_blocks (test_coverage.CoverageTests.test_demo_has_real_events_and_empty_blocks) ... ok\ntest_duplicate_json_keys_are_rejected (test_coverage.CoverageTests.test_duplicate_json_keys_are_rejected) ... ok\ntest_empty_window_reports_all_blocks_empty (test_coverage.CoverageTests.test_empty_window_reports_all_blocks_empty) ... ok\ntest_log_order_does_not_change_block_report (test_coverage.CoverageTests.test_log_order_does_not_change_block_report) ... ok\ntest_tampered_evidence_is_rejected (test_coverage.CoverageTests.test_tampered_evidence_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.006s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/transfer-window-coverage",
+    "-p",
+    "test_coverage.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 6,
+  "checked_at": "2026-10-13T05:30:28.017997+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

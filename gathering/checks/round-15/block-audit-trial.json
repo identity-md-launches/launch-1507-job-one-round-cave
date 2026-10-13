@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/block-audit/block_audit.py",
+    "demo"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"block_number\": \"26179157\",\n  \"chain_id\": \"0x1\",\n  \"checked_at\": \"2026-10-13T05:30:38Z\",\n  \"endpoint\": \"https://ethereum-rpc.publicnode.com\",\n  \"evidence_limits\": \"One provider observation at check time. A match does not prove provider honesty, independent corroboration, finality, or future canonicality.\",\n  \"provider_block_hash\": \"0x3d555940233dd8faf3cc6d8225a3563c32a9bd696182d30c6875ed8e5ad2ed19\",\n  \"schema\": \"zto-block-audit/1\",\n  \"snapshot_block_hash\": \"0x3d555940233dd8faf3cc6d8225a3563c32a9bd696182d30c6875ed8e5ad2ed19\",\n  \"status\": \"matches\",\n  \"token\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"total_supply_base_units\": \"1000000000000000000000000000\"\n}\n",
+  "stderr": "",
+  "checked_at": "2026-10-13T05:30:38.099076+00:00"
+}

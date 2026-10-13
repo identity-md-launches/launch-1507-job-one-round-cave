@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_batch_limits (test_replay.Tests.test_batch_limits) ... ok\ntest_byte_equivalent_hex_case_matches (test_replay.Tests.test_byte_equivalent_hex_case_matches) ... ok\ntest_chain_id_is_the_validated_captured_network (test_replay.Tests.test_chain_id_is_the_validated_captured_network) ... ok\ntest_cli_demo_with_network_disabled (test_replay.Tests.test_cli_demo_with_network_disabled) ... ok\ntest_cli_failure_emits_no_partial_report_or_traceback (test_replay.Tests.test_cli_failure_emits_no_partial_report_or_traceback) ... ok\ntest_cli_replays_live_format_and_keeps_rpc_errors_in_report (test_replay.Tests.test_cli_replays_live_format_and_keeps_rpc_errors_in_report) ... ok\ntest_conflicting_duplicate_calls_rejected (test_replay.Tests.test_conflicting_duplicate_calls_rejected) ... ok\ntest_duplicate_nonfinite_and_bad_envelope_json_rejected (test_replay.Tests.test_duplicate_nonfinite_and_bad_envelope_json_rejected) ... ok\ntest_extra_fields_wrong_versions_and_scalar_params (test_replay.Tests.test_extra_fields_wrong_versions_and_scalar_params) ... ok\ntest_full_snapshot_is_validated_even_for_chain_id (test_replay.Tests.test_full_snapshot_is_validated_even_for_chain_id) ... ok\ntest_generic_return_bytes_are_not_abi_decoded (test_replay.Tests.test_generic_return_bytes_are_not_abi_decoded) ... ok\ntest_identical_duplicate_calls_allowed (test_replay.Tests.test_identical_duplicate_calls_allowed) ... ok\ntest_input_mutation_cannot_change_validated_lookup (test_replay.Tests.test_input_mutation_cannot_change_validated_lookup) ... ok\ntest_input_size_bound (test_replay.Tests.test_input_size_bound) ... ok\ntest_latest_numbers_and_missing_canonicality_are_refused (test_replay.Tests.test_latest_numbers_and_missing_canonicality_are_refused) ... ok\ntest_malformed_request_types_and_ids (test_replay.Tests.test_malformed_request_types_and_ids) ... ok\ntest_method_allowlist_is_exact (test_replay.Tests.test_method_allowlist_is_exact) ... ok\ntest_mixed_batch_preserves_ids_and_suppresses_notifications (test_replay.Tests.test_mixed_batch_preserves_ids_and_suppresses_notifications) ... ok\ntest_notifications_and_null_identifier (test_replay.Tests.test_notifications_and_null_identifier) ... ok\ntest_replays_actual_capture_with_new_ids (test_replay.Tests.test_replays_actual_capture_with_new_ids) ... ok\ntest_report_keeps_offline_provenance (test_replay.Tests.test_report_keeps_offline_provenance) ... ok\ntest_uncaptured_call_fields_are_not_ignored (test_replay.Tests.test_uncaptured_call_fields_are_not_ignored) ... ok\ntest_uncaptured_hash_and_selector_do_not_return_a_result (test_replay.Tests.test_uncaptured_hash_and_selector_do_not_return_a_result) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.034s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/snapshot-replay",
+    "-p",
+    "test_replay.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 23,
+  "checked_at": "2026-10-13T05:30:09.440053+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

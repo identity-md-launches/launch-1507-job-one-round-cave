@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/rpc-snapshot/rpc_snapshot.py",
+    "eth_call",
+    "[{\"to\":\"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\"data\":\"0x18160ddd\"},\"finalized\"]"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"captured_at\": \"2026-10-13T05:30:36Z\",\n  \"endpoint\": \"https://ethereum-rpc.publicnode.com\",\n  \"method\": \"eth_call\",\n  \"params\": [\n    {\n      \"data\": \"0x18160ddd\",\n      \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\"\n    },\n    \"finalized\"\n  ],\n  \"result\": \"0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000\"\n}\n",
+  "stderr": "",
+  "checked_at": "2026-10-13T05:30:36.645362+00:00"
+}

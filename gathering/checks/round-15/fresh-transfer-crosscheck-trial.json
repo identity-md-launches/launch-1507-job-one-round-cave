@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/transfer-crosscheck/crosscheck.py",
+    "--from-block",
+    "26181489",
+    "--to-block",
+    "26181490"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"conflicts\": [],\n  \"evidence\": {\n    \"left\": {\n      \"captured_at\": \"2026-10-13T05:33:41Z\",\n      \"chain_id\": 1,\n      \"decimals\": 18,\n      \"decimals_block\": 26181490,\n      \"duplicate_count\": 0,\n      \"from_block\": 26181489,\n      \"from_block_anchor\": {\n        \"hash\": \"0xd96fb86055827e85f67ac21b61c10a6fbe8416a98110f4a90bbf2575996eca67\",\n        \"number\": 26181489\n      },\n      \"head_at_capture\": 26181504,\n      \"limitations\": \"Single-provider observation; not a completeness or finality proof. Interior block hashes are retained but not independently verified.\",\n      \"provider_result\": \"validated\",\n      \"raw_logs\": [],\n      \"read_only\": true,\n      \"rpc\": \"https://ethereum-rpc.publicnode.com\",\n      \"schema_version\": 3,\n      \"to_block\": 26181490,\n      \"to_block_anchor\": {\n        \"hash\": \"0x226f636226d79d24ea5552833dd6c803b3348acc57a0a85c5748ebabec15868a\",\n        \"number\": 26181490\n      },\n      \"token\": \"ZTO\",\n      \"token_address\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n      \"transfer_count\": 0,\n      \"transfers\": []\n    },\n    \"right\": {\n      \"captured_at\": \"2026-10-13T05:33:42Z\",\n      \"chain_id\": 1,\n      \"decimals\": 18,\n      \"decimals_block\": 26181490,\n      \"duplicate_count\": 0,\n      \"from_block\": 26181489,\n      \"from_block_anchor\": {\n        \"hash\": \"0xd96fb86055827e85f67ac21b61c10a6fbe8416a98110f4a90bbf2575996eca67\",\n        \"number\": 26181489\n      },\n      \"head_at_capture\": 26181504,\n      \"limitations\": \"Single-provider observation; not a completeness or finality proof. Interior block hashes are retained but not independently verified.\",\n      \"provider_result\": \"validated\",\n      \"raw_logs\": [],\n      \"read_only\": true,\n      \"rpc\": \"https://eth.drpc.org\",\n      \"schema_version\": 3,\n      \"to_block\": 26181490,\n      \"to_block_anchor\": {\n        \"hash\": \"0x226f636226d79d24ea5552833dd6c803b3348acc57a0a85c5748ebabec15868a\",\n        \"number\": 26181490\n      },\n      \"token\": \"ZTO\",\n      \"token_address\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n      \"transfer_count\": 0,\n      \"transfers\": []\n    }\n  },\n  \"from_block\": 26181489,\n  \"limitations\": \"Agreement corroborates two provider observations; it does not prove completeness, provider independence, finality, or current balances.\",\n  \"metadata_differences\": [],\n  \"only_left\": [],\n  \"only_right\": [],\n  \"providers\": [\n    \"https://ethereum-rpc.publicnode.com\",\n    \"https://eth.drpc.org\"\n  ],\n  \"read_only\": true,\n  \"schema_version\": 1,\n  \"status\": \"agreement\",\n  \"to_block\": 26181490,\n  \"token\": \"ZTO\",\n  \"transfer_counts\": [\n    0,\n    0\n  ]\n}\n",
+  "stderr": "",
+  "checked_at": "2026-10-13T05:33:42.808549+00:00"
+}

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-3/tools/fee-horizon/fee_horizon.py",
+    "--demo",
+    "--parent-base-fee-wei",
+    "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+    "--blocks",
+    "2"
+  ],
+  "exit": 2,
+  "stdout": "",
+  "stderr": "error: parent base fee must be uint256 wei per gas\n",
+  "checked_at": "2026-10-13T05:33:42.925732+00:00"
+}

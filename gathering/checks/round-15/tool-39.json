@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_empty_window (test_counterparties.CounterpartyTests.test_empty_window) ... ok\ntest_filter_and_normalize (test_counterparties.CounterpartyTests.test_filter_and_normalize) ... ok\ntest_order_and_duplicate_delivery (test_counterparties.CounterpartyTests.test_order_and_duplicate_delivery) ... ok\ntest_outside_workspace_rejected_before_open (test_counterparties.CounterpartyTests.test_outside_workspace_rejected_before_open) ... ok\ntest_real_demo (test_counterparties.CounterpartyTests.test_real_demo) ... ok\ntest_removed_log_rejected (test_counterparties.CounterpartyTests.test_removed_log_rejected) ... ok\ntest_same_pair_aggregation_and_uint256_precision (test_counterparties.CounterpartyTests.test_same_pair_aggregation_and_uint256_precision) ... ok\ntest_self_transfer_counts_once (test_counterparties.CounterpartyTests.test_self_transfer_counts_once) ... ok\ntest_tamper_rejected (test_counterparties.CounterpartyTests.test_tamper_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.016s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/transfer-counterparties",
+    "-p",
+    "test_counterparties.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 9,
+  "checked_at": "2026-10-13T05:30:27.127779+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

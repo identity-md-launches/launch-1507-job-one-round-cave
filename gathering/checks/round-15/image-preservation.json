@@ -1,0 +1,49 @@
+{
+  "source_record": 14,
+  "record_number": 15,
+  "source_sha256": "17e6c21c4836254c1f4576d4cd97557534537b6120b4d98fab45451d5ae3fa87",
+  "wall_sha256": "a41ce04a44bd5af2e8cb5aef685d541119d5d4915be7282e334c704a985bac0a",
+  "png_dimensions": [
+    1254,
+    1254
+  ],
+  "png_format": "8-bit RGB PNG",
+  "png_bytes": 3812292,
+  "jpeg_dimensions": [
+    512,
+    512
+  ],
+  "jpeg_format": "baseline JPEG",
+  "jpeg_bytes": 69733,
+  "generated_motif_dimensions": [
+    1254,
+    1254
+  ],
+  "generated_motif_sha256": "0d490b8da009fede7a3395a08f0d5b92c9b76a541db6740458d45679189f3cc9",
+  "motif_crop": [
+    300,
+    494,
+    950,
+    767
+  ],
+  "addition_rectangle": [
+    725,
+    180,
+    145,
+    100
+  ],
+  "changed_pixels": 4305,
+  "changed_pixels_outside_rectangle": 0,
+  "method": "Installed image tool motif; white paper removed in memory, earth pigment area-averaged into vacant rock.",
+  "visual_review": "Final PNG and 512px JPEG visually inspected: recognizable wide-mouthed, heavy-lidded Pepe retained; each inherited hand has four fingers and one thumb. New charcoal arch and three ochre embers occupy previously unpainted upper rock; no new hands or stencils, letters, numbers, logos, frames or prohibited imagery.",
+  "hand_digit_counts": [
+    5,
+    5
+  ],
+  "unmet_visual_requirements": [],
+  "limitations": [
+    "Inherited rough rock has photographic-looking texture, preserved as requested.",
+    "The small new pigment is subdued at thumbnail size.",
+    "Visual review is local, not independent artistic certification."
+  ]
+}

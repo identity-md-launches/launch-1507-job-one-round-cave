@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"block_count\": 12,\n  \"empty_block_count\": 11,\n  \"from_block\": 26177298,\n  \"kind\": \"erc20-transfer-window-activity\",\n  \"limitations\": \"Activity is a shape summary of one validated provider window; it does not prove complete history, finality, provider honesty, or a token balance.\",\n  \"longest_empty_run\": 11,\n  \"populated_block_count\": 1,\n  \"read_only\": true,\n  \"runs\": [\n    {\n      \"block_count\": 11,\n      \"from_block\": 26177298,\n      \"state\": \"empty\",\n      \"to_block\": 26177308\n    },\n    {\n      \"block_count\": 1,\n      \"from_block\": 26177309,\n      \"state\": \"populated\",\n      \"to_block\": 26177309\n    }\n  ],\n  \"schema_version\": 1,\n  \"to_block\": 26177309,\n  \"token\": \"ZTO\",\n  \"token_address\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n  \"transfer_count\": 3,\n  \"validated\": true\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/transfer-window-activity/activity.py",
+    "--demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:34.332159+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

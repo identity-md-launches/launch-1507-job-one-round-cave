@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_bad_http_status_or_compression (test_direct_capture.Tests.test_bad_http_status_or_compression) ... ok\ntest_cli_failure_emits_no_snapshot_or_provider_text (test_direct_capture.Tests.test_cli_failure_emits_no_snapshot_or_provider_text) ... ok\ntest_demo_with_network_creation_disabled (test_direct_capture.Tests.test_demo_with_network_creation_disabled) ... ok\ntest_no_proxy_discovery_or_default_urlopen (test_direct_capture.Tests.test_no_proxy_discovery_or_default_urlopen) ... ok\ntest_pinned_reuses_transport_and_original_inspector (test_direct_capture.Tests.test_pinned_reuses_transport_and_original_inspector) ... ok\ntest_pinned_wrong_chain_and_reorg_refused (test_direct_capture.Tests.test_pinned_wrong_chain_and_reorg_refused) ... ok\ntest_real_opener_has_empty_proxy_handler_and_redirect_refusal (test_direct_capture.Tests.test_real_opener_has_empty_proxy_handler_and_redirect_refusal) ... ok\ntest_redirect_http_handlers_cannot_reissue_request (test_direct_capture.Tests.test_redirect_http_handlers_cannot_reissue_request) ... ok\ntest_rejected_endpoint_and_method_before_opener (test_direct_capture.Tests.test_rejected_endpoint_and_method_before_opener) ... ok\ntest_request_bound_applies_before_opener (test_direct_capture.Tests.test_request_bound_applies_before_opener) ... ok\ntest_response_bound_applies_before_json_parsing (test_direct_capture.Tests.test_response_bound_applies_before_json_parsing) ... ok\ntest_serialized_output_bound (test_direct_capture.Tests.test_serialized_output_bound) ... ok\ntest_single_capture_ancestor_inspection (test_direct_capture.Tests.test_single_capture_ancestor_inspection) ... ok\ntest_strict_response_envelopes (test_direct_capture.Tests.test_strict_response_envelopes) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.698s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/direct-capture",
+    "-p",
+    "test_direct_capture.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 14,
+  "checked_at": "2026-10-13T05:29:57.659914+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

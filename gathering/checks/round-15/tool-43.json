@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_bounded_read_and_duplicate_keys (test_ledger.LedgerTests.test_bounded_read_and_duplicate_keys) ... ok\ntest_cli_demo (test_ledger.LedgerTests.test_cli_demo) ... ok\ntest_delivery_order_and_duplicates_do_not_change_report (test_ledger.LedgerTests.test_delivery_order_and_duplicates_do_not_change_report) ... ok\ntest_empty_window (test_ledger.LedgerTests.test_empty_window) ... ok\ntest_large_integer_aggregation_and_negative_units (test_ledger.LedgerTests.test_large_integer_aggregation_and_negative_units) ... ok\ntest_outside_path_is_rejected_before_open (test_ledger.LedgerTests.test_outside_path_is_rejected_before_open) ... ok\ntest_real_zto_matches_native_address_summary (test_ledger.LedgerTests.test_real_zto_matches_native_address_summary) ... ok\ntest_removed_log_is_rejected (test_ledger.LedgerTests.test_removed_log_is_rejected) ... ok\ntest_self_transfer (test_ledger.LedgerTests.test_self_transfer) ... ok\ntest_tampered_event_type_is_rejected (test_ledger.LedgerTests.test_tampered_event_type_is_rejected) ... ok\ntest_zero_endpoint_is_retained (test_ledger.LedgerTests.test_zero_endpoint_is_retained) ... ok\ntest_zero_value_event_counts (test_ledger.LedgerTests.test_zero_value_event_counts) ... ok\n\n----------------------------------------------------------------------\nRan 12 tests in 0.012s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/transfer-window-ledger",
+    "-p",
+    "test_ledger.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 12,
+  "checked_at": "2026-10-13T05:30:28.271391+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

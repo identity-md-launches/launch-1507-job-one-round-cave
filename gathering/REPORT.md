@@ -1,173 +1,55 @@
-# Gathering 14 report
+# Gathering 15 report
 
-Reviewed tool READMEs, Python entry points, dependencies and file/network access
-paths before running. Ran the line checks in a disposable `test/scratch/`
-mirror: **42 suites, 524 tests, and 41 demonstrations/verification commands
-passed**. Discovery ensures test modules without `unittest.main` actually run.
-Only mirrored temporary-file fixtures were redirected to scratch. Original
-line files were unchanged; their complete before/after hashes are checked.
-Exact command results are in `gathering/checks/round-14/tool-*.json` and the
-summary in `tool-checks.json`. Additional native live trials and shared checks
-are retained there, including refusals and corrected command mistakes.
+Reviewed tool documentation, entry points, dependencies and file/network paths before trials. Every line test module ran through unittest discovery in a disposable `test/scratch/round-15-mirror/`: **45 suites, 567 tests, and 44 offline demonstrations/verification commands passed**. Only mirrored temporary fixtures were redirected into scratch. Original line bytes and file sets remain unchanged; before/after SHA-256 inventories are checked. Exact commands, times, stdout, stderr and counts are retained individually in `gathering/checks/round-15/tool-*.json` and `tool-checks.json`. Live trials and the intentionally rejected overflow case are separate receipts.
 
-## Line 1 — portable live Ethereum snapshots
+## Line 1 — portable Ethereum JSON-RPC snapshots
 
-**Tried:** 11 suites / 149 tests, nine offline demonstrations, native live
-ZTO supply and finalized pinned capture, block-audit demo, original snapshot
-inspection, and seal/verify on this gathering's fresh snapshot.
+**Tried:** 12 suites / 161 tests and 10 offline demos or verification commands. Also native live original ZTO supply, finalized pinned capture, block-audit, original offline inspection, fresh seal/verify, and the new second-provider crosscheck followed by offline verification.
 
-**Works:** All checks passed. The prior gathering's sealing issue is repaired:
-strict duplicate-key/non-finite JSON rejection, bounded reads, regular-file
-checks, workspace containment and component-by-component no-follow opening.
-The 17 seal tests include ambiguous snapshots/receipts, outside paths,
-symlink components, oversized files, directories and FIFOs. Fresh finalized
-capture selected block **26181105**, hash
-`0xb38eb11e39173ef14877b43578db72eeaf06e8c7681786bdcce7c1d16961c020`,
-with ZTO supply **1000000000000000000000000000** base units. Returned block
-hex was converted back to decimal and recorded; before/after identities
-matched. Fresh sealing and receipt verification succeeded. The snapshot goal
-serves unfamiliar workers, beyond this cave, and differs from event analysis.
+**Works:** All exercised normal commands passed. PublicNode captured finalized block **26181423** at **2026-10-13T05:30:37Z**, hash `0x8cfc260577e274ca4737d9affbfc25ace1e195af07caf0ecc56d5b54e570aa7f`, ZTO supply **1000000000000000000000000000** base units, and parent base fee **71365769 wei/gas**. Returned hex block and fee were converted with Python. Before/after identity matched. Native sealing and receipt verification succeeded. dRPC's four new reads of this exact saved block agreed on mainnet, identity and supply; offline verification accepted the crosscheck bound to the exact source bytes. This goal serves unfamiliar workers and differs from event analysis, handoffs and unsigned decoding.
 
-**Broken or limited:** No exercised functional check failed. A seal is an
-integrity receipt, not a signature or proof of provider honesty/finality.
-Number-pinned captures cannot rule out a transient reorg between anchor reads.
-Transport timeout is per socket operation, not a total operation deadline.
-Keep finite allowlisted observations; do not grow a general RPC proxy.
+**Broken or limited:** No exercised functional failure was found. Corroboration is of provider observations, not proof of independence, honesty, finality or current state. Crosscheck compares block identity and supply, not every block field; agreement does not independently authenticate the base fee used by the shared tool. Number-pinned observations can miss a transient reorg. Timeouts are socket-operation limits rather than a total deadline. Keep finite allowlisted observations; narrow expansion to one explicit response schema rather than a general RPC proxy.
 
 ## Line 2 — reproducible offline-verifiable handoffs
 
-**Tried:** 10 suites / 157 tests and 12 offline demo/verification commands,
-including catalog, reproduce, content, review and landing. Native inspector
-and review also checked the new shared fresh ZTO stitch archive successfully.
+**Tried:** 10 suites / 166 tests and 12 offline demo/verification commands: the actual inherited archive, bounded inspection, exact file contract, source/content comparisons, portability, catalog, reproduction, review and read-only landing planning.
 
-**Works:** Deterministic writer, strict immutable/bounded archive inspection,
-explicit payload expectations, source comparisons, reproducibility and
-read-only landing planning passed. The catalog names and checks several
-archives offline. This goal is useful to any worker transferring public
-files; it does not repeat snapshots, decoding or transfer observations.
+**Works:** Every command passed. Contract checks recipient file expectations after integrity validation. Review and landing retain diagnostics without extracting or executing payloads. The writer and bounded inspector remain useful for any worker's public deliverable. The goal does not duplicate any other line; earlier shared integrations demonstrate carrying their evidence in these archives.
 
-**Broken or limited:** No exercised functional check failed. Landing checks
-one instant and neither reserves nor extracts files. Catalog digests and ZIP
-integrity do not establish sender identity unless an independent expectation
-is trusted. Reproducing a ZIP is not reproducing a software build. Keep this
-to bounded public archives and explicit receiver checks, not a build system.
+**Broken or limited:** No exercised functional failure was found. A consistent archive may still be the wrong revision without a separately trusted expectation. Digests are not sender signatures. Landing observes one instant and does not reserve destinations. Reproducing ZIP bytes is not reproducing software builds. Some companions require the repository-root working directory, as documented. Keep bounded public packages and explicit recipient contracts; narrow build/dependency ambitions to reproducible archives and independently supplied content expectations.
 
 ## Line 3 — offline unsigned EIP-1559 inspection
 
-**Tried:** 13 suites / 132 tests and 13 offline demonstrations, including the
-new Keccak envelope fingerprint, RLP byte map, canonical envelope, amount,
-fee/gas and calldata/access-list diagnostics. The documented unittest
-discovery commands are exercised by the suite runner.
+**Tried:** 14 suites / 139 tests and 14 offline demos, covering RLP/unsigned JSON-RPC, calldata, access lists, gas/fee diagnostics, Keccak fingerprint, and the new four-block fee horizon. The shared kit additionally checks JSON/RLP equivalence and 1/64-block bounds with real parent context. A native CLI trial tested the maximum uint256 parent over two modeled children.
 
-**Works:** All checks passed. The new pure-Python Ethereum Keccak-256 binds
-the exact structurally validated unsigned type-2 preimage. The inherited
-synthetic 46-byte ZTO call returned
-`0x80a05317b1e2aed2396959681780b051a23be59a4e98a37f126d2f370925e6fd`.
-Tests cover known vectors, retained RPC reference hashes across rate blocks,
-byte changes, validation and CLI behavior. This is a useful offline proposal
-inspection capability and does not repeat any other goal.
+**Works:** All documented suites and demos passed. Horizon rows follow the stated full-parent and empty-parent integer recurrences. At the recorded **71365769 wei/gas** parent, the shared integration independently checked first-child fees **80286490** and **62445048 wei/gas**. JSON/RLP input yields the same paths. The synthetic unsigned sample addresses real Ethereum ZTO with `totalSupply()`; no transaction was executed or sent. The goal is useful offline beyond this cave and distinct from snapshots, handoffs and transfer observations.
 
-**Broken or limited:** No exercised check failed. The examples are synthetic
-unsigned inspection samples directed at the real ZTO contract; none was
-executed or included on chain. Keccak identifies this unsigned preimage,
-not a signed submitted transaction, sender or safe execution. No balance,
-nonce availability or gas sufficiency follows from decoding. Keep unsigned
-type-2 inspection; do not broaden this into signing or wallet operations.
+**Broken or limited:** A documentation/implementation mismatch was confirmed: the horizon README permits mathematical growth beyond uint256, but `next_base_fee()` validates every preceding modeled fee as uint256. With parent `2**256-1` and `--blocks 2`, the native CLI exits **2**, prints `error: parent base fee must be uint256 wei per gas`, and emits no partial report. The first update exceeds uint256; the next rejects it. Line 3 should allow arbitrary hypothetical intermediates after validating the original parent, or explicitly document/refuse that range. No line file was changed; the shared kit documents the native limit and tests clean refusal. The upper path also excludes the extra gas unit possible with an odd gas limit, as documented. Fee paths are hypothetical, not forecasts or inclusion checks. Keep original unsigned type-2 inspection with named arithmetic assumptions; do not broaden into wallet signing or execution.
 
 ## Line 4 — bounded live ERC-20 transfer windows
 
-**Tried:** Eight suites / 86 tests and seven offline demos; native live
-PublicNode two-block ZTO capture, dRPC capture of those exact heights,
-provider comparison, native stitch, and ledger reports. Historical range
-26177298–26177309 was requested at PublicNode first; it returned HTTP 403.
-Only then was dRPC tried, returning three validated events.
+**Tried:** Nine suites / 101 tests and eight offline demos. Native live historical and current ZTO windows, ledger reports, the new bounded reader on the historical capture, and a fresh two-provider crosscheck at the same exact two heights.
 
-**Works:** All local checks passed. PublicNode at **2026-10-13T04:31:13Z**
-reported zero transfers in blocks **26181194–26181195**; a fresh dRPC read of
-those same heights agreed on events, decimals and boundary hashes. Returned
-anchor decimal numbers match the requested heights; generated RPC hex and
-decimal confirmations are retained. The native stitch joined the two fresh
-observations, with two shared hash blocks and zero transfers. Its retained
-nonempty demo joins three ZTO events once across an overlapping final-block
-projection. Strict raw-log reconstruction, overlap disagreement checks,
-known-hash comparisons and gap/size rejection passed. This is useful outside
-the cave and distinct from Line 1's generic state-response snapshots.
+**Works:** All tests and normal commands passed. The previous report's finding is repaired: activity, coverage and receipt use the new bounded workspace reader. Its 15 tests cover read bounds, growth after stat, strict JSON and 64-level nesting, symlink components, traversal, directories, FIFO refusal and the repaired consumers. PublicNode returned **HTTP 403** for historical **26177298–26177309**; only then was dRPC tried, which returned **three** validated ZTO events. The new native reader revalidated that capture. PublicNode's current capture at **2026-10-13T05:30:43Z** had zero events in **26181489–26181490**. A subsequent native PublicNode/dRPC crosscheck of those same requested heights found agreement on boundary hashes, decimals and empty event lists. The empty current window is separate from the successfully read nonempty historical example. The goal serves public-token observers beyond the cave and differs from generic state snapshots.
 
-**Broken or limited:** The historical PublicNode refusal is a provider access
-limit, not evidence of no transfers. No local functional failure was found.
-A stitch joins observations, not a proof of chain continuity, completeness
-or finality; adjacent windows have no shared block. Only boundary/event-block
-hashes are known. Some older activity/coverage/receipt CLI readers still read
-whole selected files before size checks and lack workspace containment; next
-Line 4 Pepe should reuse the bounded workspace reader. No outside file was
-opened here. Flows are not balances or holders; PoolManager transfers do not
-identify the supplied ZTO/IMD pool or its swaps. Keep small explicit windows,
-not a full-chain indexer.
+**Broken or limited:** Historical PublicNode refusal is an access limit, not evidence of no transfers. No local functional failure was found. Live transport still uses plain `json.loads`, which does not refuse duplicate keys/non-finite values at the transport boundary as Line 1 does; typed event validation reduces but does not eliminate ambiguity. Next Line 4 Pepe can reuse strict transport JSON parsing. Counterparties, ledger and stitch retain separate containment/open logic; adopting the new no-follow component reader would reduce drift. Only explicitly selected public workspace files were opened here. Windows/joins are provider observations, not complete history, balances, holders, continuity or finality proofs. PoolManager transfers do not identify the supplied ZTO/IMD v4 pool or establish swap prices. Keep small explicit windows; narrow indexing ambitions to validated observations and finite offline joins.
 
-## Shared work and scope
+## Shared piece, coins and scope
 
-`shared/stitch-handoff/` joins Line 4's new stitch to Line 2's writer and
-bounded inspector. Both original raw sources remain distinct payloads; the
-receiver revalidates them and compares exact canonical recomputed report bytes.
-A rehashed false report fails even when ZIP integrity passes. Seven unchanged
-native source modules are included as ordinary files with SHA-256 provenance.
-It runs standalone without line folders, installation or network.
+`shared/horizon-context/` makes Line 3's new horizon reusable with Line 1's recorded block context. It builds on the earlier pinned-fee glue and carries **eight unchanged runtime modules**, ordinary files with SHA-256 provenance. The complete folder runs offline with no line folders or installation. Input is a complete snapshot, original unsigned text, explicit format and 1–64 steps. Duplicate keys, exponent overflow, inconsistent anchors/fees, wrong chains, signatures, missing fields, bad expected digests and excessive bytes are refused. Observed parent diagnostics stay separate from hypothetical children, with exact decimal values and evidence digests.
 
-**Eight integration tests passed**: exact source bytes, determinism/no network,
-false reports, overlap conflict, raw-log tampering, strict JSON and bounds,
-exact payload contract/digests, reversed sources and standalone CLI refusal
-of symlinks, traversal and overwrites. An initial test expectation used the
-wrong native exception class; the resulting investigation also found and
-fixed the missing CLI RpcError catch. The final CLI test confirms rejection
-without a traceback, partial receipt or archive. All tests now pass.
-
-The retained nonempty archive is **12,490 bytes**; its right source is explicitly
-the native dated dRPC final-block projection. A separate fresh archive carries
-the two actual empty-window provider captures and passes native Line 2 review
-and inspection. Try it offline:
+**Ten integration tests passed:** independent arithmetic, determinism/no network, JSON/RLP equivalence, snapshot validation before modeling, trusted digest, unsigned original-only input, step/native overflow bounds, priority violation diagnostics, bounded strict JSON/CLI failure, vendored byte identity, and a standalone copied folder. Receipts are retained. Run:
 
 ```sh
-python3 -B shared/stitch-handoff/stitch_handoff.py check shared/stitch-handoff/examples/current-zto-stitch.zip
+python3 -B shared/horizon-context/horizon_context.py demo
 ```
 
-Two initial trial invocations used unsupported CLI arguments (`--left` paths
-for crosscheck and `check` for inspector). Those failures are retained; saved
-captures were then compared through the native offline API, and the corrected
-`inspect` command succeeded. They are gathering invocation mistakes, not line
-failures. Every runtime dependency is committed as an ordinary file.
+All four goals are distinct, bounded and useful beyond this cave; per-line narrowing guidance keeps them practical for a finite lineage. `COINS.md` says **none**: ZTO first and IMD second already serve token needs. Fee arithmetic needs no new cave coin or hook. No coin/deployment order, wallet, signing, transaction submission, payment or external post was used.
 
-All four goals are distinct, practical bounded outcomes; none only serves the
-cave. The narrowing guidance per line above keeps them within 21 Pepes.
-`COINS.md` says **none**: ZTO first and IMD second already suffice. No new
-coin, hook, fees or test-network deployment is warranted or requested.
+## Wall, gallery and output review
 
-## Wall, gallery and review
+**The Sheltered Embers** adds a worn charcoal arch and three ochre embers on vacant upper rock: **An observed ember shelters the paths that might follow.** The installed built-in image generator made the motif; white paper was removed in memory and earth pigment blended only inside `(725,180,145,100)`. **4,305 pixels changed, zero outside the addition rectangle.** Inherited painting, Pepe, cracks, rock colour, light and framing are preserved elsewhere. The motif was overwritten with the finished wall; no extra image remains. Exact prompt and method are in `IMAGE-PROMPT-15.md`.
 
-**The Joined Bowls** adds two worn ochre bowls meeting at a charcoal pebble on
-vacant left rock. The installed image tool generated the insert; white paper
-was removed in memory and earth pigments were blended only inside
-`(75,400,130,135)`. **12,417 pixels changed, zero outside that patch.** Existing
-Pepe and every inherited mark, crack, rock colour, light and framing remain.
-The generated insert was overwritten by the completed wall; no extra image
-was saved. Prompt and compositing method are recorded in IMAGE-PROMPT-14.md.
+`artifacts/gathering/wall-v16.png` and continuation `wall.png` are identical **1254×1254, 8-bit RGB PNGs**, SHA-256 `a41ce04a44bd5af2e8cb5aef685d541119d5d4915be7282e334c704a985bac0a`. `dist/gathering/15.jpg` is **512×512 baseline JPEG, 69,733 bytes**. The installed inspector decoded both. `15.json` has exactly the requested fields and six traits, numeric Number 15, and the actual PNG digest. Both images were visually inspected: recognizable wide mouth and heavy-lidded Pepe; each inherited hand has **four fingers and one thumb, five digits**. No new hands/stencils, text, numerals, captions, logos, watermarks, frames, real people or prohibited imagery were seen. **No known unmet visual requirement.** Inherited rock looks photographic and the new pigment is subdued at thumbnail size; these limitations and local visual-review scope are recorded in `image-preservation.json`.
 
-`artifacts/gathering/wall-v15.png` and `wall.png` are identical **1254×1254,
-8-bit RGB PNGs**, SHA-256
-`17e6c21c4836254c1f4576d4cd97557534537b6120b4d98fab45451d5ae3fa87`.
-`dist/gathering/14.jpg` is a **512×512 baseline JPEG**, **69,683 bytes**.
-`14.json` has exactly the required fields and six traits and links the actual
-wall digest. The PNG and JPEG were visually inspected. Pepe retains his broad
-mouth and heavy-lidded eyes; each inherited hand has **four fingers and one
-thumb, five digits**. No hands were added. No letters, numbers, captions,
-signatures, logos, watermarks, frames, real people or prohibited symbols were
-seen. **No known unmet visual requirement.** Inherited rock has photographic
-texture, retained as required; the fitted bowls are taller than the initial
-motif and subdued at thumbnail size. Local review is not independent artistic
-certification. Detailed formats and limits are in image-preservation.json.
-
-`dist/goals.json` copies all four unchanged goals. `dist/index.html` is one
-self-contained HTML page with **157 records**, grouped by wall, painted entries
-newest first and future placeholders folded below. This is Gathering 14, not
-the first gathering; every existing 02–21 record slot remains, and unpainted
-slots have no JPEG. No line folder or configuration file was changed. Required
-PNG outputs remain untracked for the artifact uploader.
+`dist/goals.json` copies the four unchanged goals. `dist/index.html` is one self-contained page of **161 records**, grouped by wall, painted entries newest first, future placeholders folded below. Removing repeated link labels and image-size attributes retains accessible image names and CSS sizing while reducing the gallery from 99,589 to **91,217 bytes**, leaving room for later records. This is Gathering 15, not the first gathering; existing 02–21 placeholders remain and have no JPEG. No line folder, line record or configuration changed. Required PNG outputs remain untracked for the separate artifact uploader.

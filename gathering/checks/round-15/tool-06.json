@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_capture_pins_actual_number (test_pinned.Tests.test_capture_pins_actual_number) ... ok\ntest_changed_hash_rejected (test_pinned.Tests.test_changed_hash_rejected) ... ok\ntest_combined_size_limit (test_pinned.Tests.test_combined_size_limit) ... ok\ntest_inspect_cli_offline_and_controlled_errors (test_pinned.Tests.test_inspect_cli_offline_and_controlled_errors) ... ok\ntest_malformed_supply_rejected (test_pinned.Tests.test_malformed_supply_rejected) ... ok\ntest_offline_tampering_rejected (test_pinned.Tests.test_offline_tampering_rejected) ... ok\ntest_pending_and_invalid_tags_no_reads (test_pinned.Tests.test_pending_and_invalid_tags_no_reads) ... ok\ntest_readonly_guard_precedes_network (test_pinned.Tests.test_readonly_guard_precedes_network) ... ok\ntest_response_limits_and_envelope (test_pinned.Tests.test_response_limits_and_envelope) ... ok\ntest_wrong_chain_stops_before_call (test_pinned.Tests.test_wrong_chain_stops_before_call) ... ok\ntest_wrong_explicit_block_stops_before_call (test_pinned.Tests.test_wrong_explicit_block_stops_before_call) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.030s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/pinned-snapshot",
+    "-p",
+    "test_pinned.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 11,
+  "checked_at": "2026-10-13T05:29:58.531107+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

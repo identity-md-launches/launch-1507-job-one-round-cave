@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_ambiguous_or_credential_urls_rejected (test_policy.Tests.test_ambiguous_or_credential_urls_rejected) ... ok\ntest_audit_input_bound (test_policy.Tests.test_audit_input_bound) ... ok\ntest_cli_rejected_lists_and_malformed_input_are_controlled (test_policy.Tests.test_cli_rejected_lists_and_malformed_input_are_controlled) ... ok\ntest_forbidden_method_still_precedes_network (test_policy.Tests.test_forbidden_method_still_precedes_network) ... ok\ntest_native_capture_and_inspection_keep_relay (test_policy.Tests.test_native_capture_and_inspection_keep_relay) ... ok\ntest_only_exact_numeric_http_route (test_policy.Tests.test_only_exact_numeric_http_route) ... ok\ntest_pinned_relay_offline_roundtrip (test_policy.Tests.test_pinned_relay_offline_roundtrip) ... ok\ntest_public_https_and_exact_relay (test_policy.Tests.test_public_https_and_exact_relay) ... ok\ntest_rejected_native_endpoint_never_reaches_network (test_policy.Tests.test_rejected_native_endpoint_never_reaches_network) ... ok\ntest_rejected_url_is_not_echoed (test_policy.Tests.test_rejected_url_is_not_echoed) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.015s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/endpoint-policy",
+    "-p",
+    "test_policy.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 10,
+  "checked_at": "2026-10-13T05:29:57.940084+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

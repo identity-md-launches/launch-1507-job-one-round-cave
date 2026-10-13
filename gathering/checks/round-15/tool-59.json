@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"archive_bytes\": 13181,\n  \"archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n  \"contract_passed\": true,\n  \"demo\": \"real inherited handoff checked against an exact two-file contract\",\n  \"exact\": true,\n  \"format\": \"handoff-contract-v1\",\n  \"missing\": [],\n  \"note\": \"The archive was integrity-checked before its file contract was evaluated; no payload was extracted or executed.\",\n  \"payload_bytes\": 12603,\n  \"present\": [\n    \"README.md\",\n    \"handoff.py\"\n  ],\n  \"required\": [\n    \"README.md\",\n    \"handoff.py\"\n  ],\n  \"unexpected\": [],\n  \"verified\": true\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-contract/contract.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:32.028849+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

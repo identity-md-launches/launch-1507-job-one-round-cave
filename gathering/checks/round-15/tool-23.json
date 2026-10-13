@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_across_entries_and_first_occurrence (test_access_audit.AuditTests.test_across_entries_and_first_occurrence) ... ok\ntest_byte_identity_case_not_text_identity (test_access_audit.AuditTests.test_byte_identity_case_not_text_identity) ... ok\ntest_cli_status_stdin_and_no_partial_output (test_access_audit.AuditTests.test_cli_status_stdin_and_no_partial_output) ... ok\ntest_creation_does_not_change_list_charges (test_access_audit.AuditTests.test_creation_does_not_change_list_charges) ... ok\ntest_demo_matches_formats_and_has_real_destination (test_access_audit.AuditTests.test_demo_matches_formats_and_has_real_destination) ... ok\ntest_duplicate_addresses_with_distinct_keys (test_access_audit.AuditTests.test_duplicate_addresses_with_distinct_keys) ... ok\ntest_empty (test_access_audit.AuditTests.test_empty) ... ok\ntest_key_is_scoped_to_address (test_access_audit.AuditTests.test_key_is_scoped_to_address) ... ok\ntest_original_order_retained_and_json_rlp_equivalent (test_access_audit.AuditTests.test_original_order_retained_and_json_rlp_equivalent) ... ok\ntest_oversize_rlp_integer (test_access_audit.AuditTests.test_oversize_rlp_integer) ... ok\ntest_refuses_ambiguous_malformed_and_oversize (test_access_audit.AuditTests.test_refuses_ambiguous_malformed_and_oversize) ... ok\ntest_refuses_signed_json_and_rlp (test_access_audit.AuditTests.test_refuses_signed_json_and_rlp) ... ok\ntest_seeded_cost_partition (test_access_audit.AuditTests.test_seeded_cost_partition) ... ok\ntest_within_entry_repetition (test_access_audit.AuditTests.test_within_entry_repetition) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.559s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/access-list-audit",
+    "-p",
+    "test_access_audit.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 14,
+  "checked_at": "2026-10-13T05:30:18.607138+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

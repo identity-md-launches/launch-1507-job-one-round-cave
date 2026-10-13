@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_after_anchor_changed (test_batch_capture.BatchTests.test_after_anchor_changed) ... ok\ntest_bad_timestamp (test_batch_capture.BatchTests.test_bad_timestamp) ... ok\ntest_batch_request_ids_must_be_consecutive (test_batch_capture.BatchTests.test_batch_request_ids_must_be_consecutive) ... ok\ntest_boolean_id (test_batch_capture.BatchTests.test_boolean_id) ... ok\ntest_canonical_boolean_only (test_batch_capture.BatchTests.test_canonical_boolean_only) ... ok\ntest_capture_reordered_responses (test_batch_capture.BatchTests.test_capture_reordered_responses) ... ok\ntest_duplicate_ids (test_batch_capture.BatchTests.test_duplicate_ids) ... ok\ntest_duplicate_labels (test_batch_capture.BatchTests.test_duplicate_labels) ... ok\ntest_error_is_not_result (test_batch_capture.BatchTests.test_error_is_not_result) ... ok\ntest_invalid_calls_fail_before_send (test_batch_capture.BatchTests.test_invalid_calls_fail_before_send) ... ok\ntest_missing_response (test_batch_capture.BatchTests.test_missing_response) ... ok\ntest_no_network_for_unsafe_request (test_batch_capture.BatchTests.test_no_network_for_unsafe_request) ... ok\ntest_no_pending_tag (test_batch_capture.BatchTests.test_no_pending_tag) ... ok\ntest_no_sequential_fallback_on_failed_batch (test_batch_capture.BatchTests.test_no_sequential_fallback_on_failed_batch) ... ok\ntest_out_of_order_wire_ids (test_batch_capture.BatchTests.test_out_of_order_wire_ids) ... ok\ntest_real_chain_demo (test_batch_capture.BatchTests.test_real_chain_demo) ... ok\ntest_result_plus_error (test_batch_capture.BatchTests.test_result_plus_error) ... ok\ntest_short_known_abi_word (test_batch_capture.BatchTests.test_short_known_abi_word) ... ok\ntest_strict_json (test_batch_capture.BatchTests.test_strict_json) ... ok\ntest_string_id (test_batch_capture.BatchTests.test_string_id) ... ok\ntest_unknown_call_field (test_batch_capture.BatchTests.test_unknown_call_field) ... ok\ntest_unknown_id (test_batch_capture.BatchTests.test_unknown_id) ... ok\ntest_wrong_chain (test_batch_capture.BatchTests.test_wrong_chain) ... ok\ntest_wrong_explicit_block (test_batch_capture.BatchTests.test_wrong_explicit_block) ... ok\ntest_wrong_hash (test_batch_capture.BatchTests.test_wrong_hash) ... ok\ntest_wrong_version (test_batch_capture.BatchTests.test_wrong_version) ... ok\n\n----------------------------------------------------------------------\nRan 26 tests in 0.031s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/batch-capture",
+    "-p",
+    "test_batch_capture.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 26,
+  "checked_at": "2026-10-13T05:29:56.325107+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_demo_shape (test_activity.ActivityTests.test_demo_shape) ... ok\ntest_empty_window_is_one_empty_run (test_activity.ActivityTests.test_empty_window_is_one_empty_run) ... ok\ntest_tampered_evidence_is_rejected (test_activity.ActivityTests.test_tampered_evidence_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 3 tests in 0.002s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/transfer-window-activity",
+    "-p",
+    "test_activity.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 3,
+  "checked_at": "2026-10-13T05:30:27.758766+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

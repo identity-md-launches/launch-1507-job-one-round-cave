@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_case_collision (test_portability.PortabilityTests.test_case_collision) ... ok\ntest_deterministic (test_portability.PortabilityTests.test_deterministic) ... ok\ntest_devices (test_portability.PortabilityTests.test_devices) ... ok\ntest_directory_case_collision (test_portability.PortabilityTests.test_directory_case_collision) ... ok\ntest_file_directory_conflict (test_portability.PortabilityTests.test_file_directory_conflict) ... ok\ntest_fixture_absolute_and_relative_roots (test_portability.PortabilityTests.test_fixture_absolute_and_relative_roots) ... ok\ntest_forbidden_punctuation (test_portability.PortabilityTests.test_forbidden_punctuation) ... ok\ntest_invalid_archive_no_partial_json (test_portability.PortabilityTests.test_invalid_archive_no_partial_json) ... ok\ntest_manifest_alias (test_portability.PortabilityTests.test_manifest_alias) ... ok\ntest_normalization_collision (test_portability.PortabilityTests.test_normalization_collision) ... ok\ntest_ordinary_paths (test_portability.PortabilityTests.test_ordinary_paths) ... ok\ntest_payload_integrity_before_path_analysis (test_portability.PortabilityTests.test_payload_integrity_before_path_analysis) ... ok\ntest_real_inherited_archive (test_portability.PortabilityTests.test_real_inherited_archive) ... ok\ntest_trailing_trim_collisions (test_portability.PortabilityTests.test_trailing_trim_collisions) ... ok\ntest_trusted_digest_and_mismatch (test_portability.PortabilityTests.test_trusted_digest_and_mismatch) ... ok\ntest_utf16_lengths (test_portability.PortabilityTests.test_utf16_lengths) ... ok\ntest_utf8_component_boundary (test_portability.PortabilityTests.test_utf8_component_boundary) ... ok\ntest_utf8_counts_original_spelling (test_portability.PortabilityTests.test_utf8_counts_original_spelling) ... ok\ntest_utf8_directory_component (test_portability.PortabilityTests.test_utf8_directory_component) ... ok\ntest_verified_hazard_cli (test_portability.PortabilityTests.test_verified_hazard_cli) ... ok\ntest_verified_utf8_boundary_is_portable (test_portability.PortabilityTests.test_verified_utf8_boundary_is_portable) ... ok\ntest_verified_utf8_hazard_cli (test_portability.PortabilityTests.test_verified_utf8_hazard_cli) ... ok\ntest_workspace_path_refusal (test_portability.PortabilityTests.test_workspace_path_refusal) ... ok\n\n----------------------------------------------------------------------\nRan 23 tests in 0.123s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-portability",
+    "-p",
+    "test_portability.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 23,
+  "checked_at": "2026-10-13T05:30:12.696100+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"anchor\": {\n    \"hash\": \"0xe74d1cdd8b9c232d9093efce8640e5cdb2730b5f2979314328a74460f2530d05\",\n    \"number\": \"0x18f7535\",\n    \"parentHash\": \"0xfe059fc3b25f5a6b9b3aaede9d318909ee91e64ae04fe67c7e10e740e5b10d0f\",\n    \"timestamp\": \"0x6acd46d7\"\n  },\n  \"captured_at\": \"2026-10-12T21:02:00Z\",\n  \"endpoint\": \"http://127.0.0.1:40365/rpc/1\",\n  \"evidence_limits\": \"Offline replay of recorded provider responses only. requireCanonical was requested at capture time; canonicality, finality and contract state are not rechecked. This report is not a live RPC service or a state proof.\",\n  \"offline\": true,\n  \"response\": [\n    {\n      \"id\": \"ZTO-supply\",\n      \"jsonrpc\": \"2.0\",\n      \"result\": \"0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000\"\n    },\n    {\n      \"id\": \"IMD-supply\",\n      \"jsonrpc\": \"2.0\",\n      \"result\": \"0x00000000000000000000000000000000000000000003743cc36ed3a9cbe77000\"\n    },\n    {\n      \"id\": \"ZTO-decimals\",\n      \"jsonrpc\": \"2.0\",\n      \"result\": \"0x0000000000000000000000000000000000000000000000000000000000000012\"\n    },\n    {\n      \"id\": \"IMD-decimals\",\n      \"jsonrpc\": \"2.0\",\n      \"result\": \"0x0000000000000000000000000000000000000000000000000000000000000012\"\n    },\n    {\n      \"error\": {\n        \"code\": -32602,\n        \"message\": \"Expected to/data and captured canonical blockHash\"\n      },\n      \"id\": \"latest-is-not-captured\",\n      \"jsonrpc\": \"2.0\"\n    }\n  ],\n  \"schema\": \"ethereum-snapshot-replay/1\"\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/snapshot-replay/replay.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:30.690022+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

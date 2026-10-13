@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_cli_exit_codes_and_no_partial_receipt (test_content.ContentTests.test_cli_exit_codes_and_no_partial_receipt) ... ok\ntest_corrupt_archive_and_digest (test_content.ContentTests.test_corrupt_archive_and_digest) ... ok\ntest_expected_size_is_enforced (test_content.ContentTests.test_expected_size_is_enforced) ... ok\ntest_malformed_expectations (test_content.ContentTests.test_malformed_expectations) ... ok\ntest_missing_and_extra (test_content.ContentTests.test_missing_and_extra) ... ok\ntest_nonexact_allows_only_extras (test_content.ContentTests.test_nonexact_allows_only_extras) ... ok\ntest_outside_and_symlink_refusal (test_content.ContentTests.test_outside_and_symlink_refusal) ... ok\ntest_real_demo (test_content.ContentTests.test_real_demo) ... ok\ntest_roundtrip_nested_empty_and_unicode (test_content.ContentTests.test_roundtrip_nested_empty_and_unicode) ... ok\ntest_valid_same_length_wrong_content (test_content.ContentTests.test_valid_same_length_wrong_content) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.325s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-content",
+    "-p",
+    "test_content.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 10,
+  "checked_at": "2026-10-13T05:30:11.360660+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

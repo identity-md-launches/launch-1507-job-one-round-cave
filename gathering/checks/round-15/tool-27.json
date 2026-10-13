@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_all_supported_static_calls (test_intent.IntentTests.test_all_supported_static_calls) ... ok\ntest_approval_boundaries (test_intent.IntentTests.test_approval_boundaries) ... ok\ntest_cli_demo_and_usage (test_intent.IntentTests.test_cli_demo_and_usage) ... ok\ntest_exact_lengths_reject_truncation_and_trailing_bytes (test_intent.IntentTests.test_exact_lengths_reject_truncation_and_trailing_bytes) ... ok\ntest_labels_require_ethereum_chain (test_intent.IntentTests.test_labels_require_ethereum_chain) ... ok\ntest_malformed_envelopes_still_rejected (test_intent.IntentTests.test_malformed_envelopes_still_rejected) ... ok\ntest_nonzero_address_padding_rejected_in_every_position (test_intent.IntentTests.test_nonzero_address_padding_rejected_in_every_position) ... ok\ntest_random_uint256_amounts_preserved_exactly (test_intent.IntentTests.test_random_uint256_amounts_preserved_exactly) ... ok\ntest_unknown_empty_short_and_creation_calldata (test_intent.IntentTests.test_unknown_empty_short_and_creation_calldata) ... ok\ntest_value_fee_order_and_oversize_warnings (test_intent.IntentTests.test_value_fee_order_and_oversize_warnings) ... ok\ntest_zto_demo_and_exact_budget (test_intent.IntentTests.test_zto_demo_and_exact_budget) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.018s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/erc20-intent",
+    "-p",
+    "test_intent.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 11,
+  "checked_at": "2026-10-13T05:30:19.701405+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

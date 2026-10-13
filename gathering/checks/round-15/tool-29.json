@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_cli_demo_and_invalid_exit (test_fee_horizon.HorizonTests.test_cli_demo_and_invalid_exit) ... ok\ntest_integer_step_rounding (test_fee_horizon.HorizonTests.test_integer_step_rounding) ... ok\ntest_multiple_steps_and_cap_boundary (test_fee_horizon.HorizonTests.test_multiple_steps_and_cap_boundary) ... ok\ntest_original_json_rlp_equivalence_and_zto (test_fee_horizon.HorizonTests.test_original_json_rlp_equivalence_and_zto) ... ok\ntest_parent_fee_can_start_above_cap_and_empty_path_recovers (test_fee_horizon.HorizonTests.test_parent_fee_can_start_above_cap_and_empty_path_recovers) ... ok\ntest_priority_over_cap_never_claims_coverage (test_fee_horizon.HorizonTests.test_priority_over_cap_never_claims_coverage) ... ok\ntest_rejects_untrusted_or_unbounded_inputs (test_fee_horizon.HorizonTests.test_rejects_untrusted_or_unbounded_inputs) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.427s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/fee-horizon",
+    "-p",
+    "test_fee_horizon.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 7,
+  "checked_at": "2026-10-13T05:30:21.629036+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

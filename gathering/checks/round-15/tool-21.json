@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_all_differences_reported_together (test_review.ReviewTests.test_all_differences_reported_together) ... ok\ntest_archive_is_read_once (test_review.ReviewTests.test_archive_is_read_once) ... ok\ntest_archive_replacement_after_snapshot (test_review.ReviewTests.test_archive_replacement_after_snapshot) ... ok\ntest_budgets_and_invalid_archive (test_review.ReviewTests.test_budgets_and_invalid_archive) ... ok\ntest_cli_statuses_and_no_partial_json (test_review.ReviewTests.test_cli_statuses_and_no_partial_json) ... ok\ntest_content_cli_statuses (test_review.ReviewTests.test_content_cli_statuses) ... ok\ntest_content_differences_do_not_hide_other_diagnostics (test_review.ReviewTests.test_content_differences_do_not_hide_other_diagnostics) ... ok\ntest_content_uses_captured_archive_and_expectation_once (test_review.ReviewTests.test_content_uses_captured_archive_and_expectation_once) ... ok\ntest_corrupt_archive_prevents_landing_scan (test_review.ReviewTests.test_corrupt_archive_prevents_landing_scan) ... ok\ntest_corruption_prevents_source_scan (test_review.ReviewTests.test_corruption_prevents_source_scan) ... ok\ntest_deterministic_report_and_trusted_digest (test_review.ReviewTests.test_deterministic_report_and_trusted_digest) ... ok\ntest_expectation_paths_stay_in_workspace (test_review.ReviewTests.test_expectation_paths_stay_in_workspace) ... ok\ntest_expected_content_matches_same_digest (test_review.ReviewTests.test_expected_content_matches_same_digest) ... ok\ntest_landing_cli_statuses (test_review.ReviewTests.test_landing_cli_statuses) ... ok\ntest_landing_name_alias_and_symlink_diagnostics (test_review.ReviewTests.test_landing_name_alias_and_symlink_diagnostics) ... ok\ntest_landing_retains_other_differences (test_review.ReviewTests.test_landing_retains_other_differences) ... ok\ntest_landing_scan_limit_refuses_review (test_review.ReviewTests.test_landing_scan_limit_refuses_review) ... ok\ntest_landing_skipped_and_fresh_destination_not_created (test_review.ReviewTests.test_landing_skipped_and_fresh_destination_not_created) ... ok\ntest_landing_uses_captured_receipt_without_reopening_archive (test_review.ReviewTests.test_landing_uses_captured_receipt_without_reopening_archive) ... ok\ntest_malformed_expectation_prevents_archive_and_source_reads (test_review.ReviewTests.test_malformed_expectation_prevents_archive_and_source_reads) ... ok\ntest_missing_extra_and_subset_content (test_review.ReviewTests.test_missing_extra_and_subset_content) ... ok\ntest_mutable_archive_buffer_is_frozen_between_checks (test_review.ReviewTests.test_mutable_archive_buffer_is_frozen_between_checks) ... ok\ntest_nonregular_source_is_refused (test_review.ReviewTests.test_nonregular_source_is_refused) ... ok\ntest_occupied_destination_fails_only_landing (test_review.ReviewTests.test_occupied_destination_fails_only_landing) ... ok\ntest_portability_hazard_is_difference (test_review.ReviewTests.test_portability_hazard_is_difference) ... ok\ntest_real_archive_and_source (test_review.ReviewTests.test_real_archive_and_source) ... ok\ntest_source_diagnostics_retained (test_review.ReviewTests.test_source_diagnostics_retained) ... ok\ntest_trusted_digest_refusals (test_review.ReviewTests.test_trusted_digest_refusals) ... ok\ntest_unsafe_destination_refused_before_archive_read (test_review.ReviewTests.test_unsafe_destination_refused_before_archive_read) ... ok\ntest_valid_alternate_serialization_is_difference (test_review.ReviewTests.test_valid_alternate_serialization_is_difference) ... ok\ntest_valid_wrong_revision_fails_content_only (test_review.ReviewTests.test_valid_wrong_revision_fails_content_only) ... ok\ntest_without_source_is_explicitly_skipped (test_review.ReviewTests.test_without_source_is_explicitly_skipped) ... ok\ntest_workspace_paths_and_symlinks_refused (test_review.ReviewTests.test_workspace_paths_and_symlinks_refused) ... ok\n\n----------------------------------------------------------------------\nRan 33 tests in 3.364s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-review",
+    "-p",
+    "test_review.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 33,
+  "checked_at": "2026-10-13T05:30:17.400493+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/erc20-transfer-window/transfer_window.py",
+    "--from-block",
+    "26177298",
+    "--to-block",
+    "26177309"
+  ],
+  "exit": 2,
+  "stdout": "",
+  "stderr": "transfer-window: network or JSON failure: HTTP Error 403: Forbidden\n",
+  "checked_at": "2026-10-13T05:30:39.191436+00:00"
+}

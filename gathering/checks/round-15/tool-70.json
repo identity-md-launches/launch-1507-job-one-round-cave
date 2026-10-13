@@ -1,0 +1,19 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"checkedViolations\": [],\n  \"context\": {\n    \"baseFeePerGasWei\": \"1000000000\",\n    \"chainId\": \"1\",\n    \"source\": \"Explicit caller-supplied value; no block or freshness verified.\"\n  },\n  \"fees\": {\n    \"baseFeeShortfallPerGasWei\": \"0\",\n    \"contextBurnCeilingAtGasLimitWei\": \"100000000000000\",\n    \"contextFeeCeilingAtGasLimitWei\": \"200000000000000\",\n    \"contextPriorityCeilingAtGasLimitWei\": \"100000000000000\",\n    \"effectiveGasPriceWei\": \"2000000000\",\n    \"effectivePriorityFeePerGasWei\": \"1000000000\",\n    \"feeCeilingAtGasLimitWei\": \"200000000000000\",\n    \"fullPriorityAvailable\": true,\n    \"maxBaseFeeForFeeCapWei\": \"2000000000\",\n    \"maxBaseFeeForFullPriorityWei\": \"1000000000\",\n    \"maxFeePerGasWei\": \"2000000000\",\n    \"maxPriorityFeePerGasWei\": \"1000000000\",\n    \"nativeFeeAsset\": \"ETH\",\n    \"valuePlusFeeCeilingWei\": \"200000000000000\"\n  },\n  \"inputFormat\": \"rlp\",\n  \"inspection\": {\n    \"calldata\": {\n      \"arguments\": {},\n      \"candidateMethod\": \"totalSupply\",\n      \"selector\": \"0x18160ddd\",\n      \"status\": \"abi-pattern-match\"\n    },\n    \"destinationLabel\": \"ZTO\",\n    \"feeBudget\": {\n      \"gasFeeCapWei\": \"200000000000000\",\n      \"meaning\": \"Gas limit times maximum fee per gas; excludes token transfers. Not an estimate.\",\n      \"valuePlusGasFeeCapWei\": \"200000000000000\"\n    },\n    \"transaction\": {\n      \"accessList\": [],\n      \"calldataSelector\": \"0x18160ddd\",\n      \"chainId\": \"1\",\n      \"data\": \"0x18160ddd\",\n      \"gasLimit\": \"100000\",\n      \"maxFeePerGas\": \"2000000000\",\n      \"maxPriorityFeePerGas\": \"1000000000\",\n      \"nonce\": \"0\",\n      \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n      \"type\": \"EIP-1559\",\n      \"typeByte\": \"0x02\",\n      \"value\": \"0\"\n    },\n    \"warnings\": [\n      \"Offline inspection only: no chain state, simulation, sender or contract behavior verified.\",\n      \"Selectors can collide; an ABI pattern match does not prove ERC-20 behavior.\"\n    ]\n  },\n  \"passesCheckedFeeConstraints\": true,\n  \"schema\": \"fee-context/v1\",\n  \"warnings\": [\n    \"Offline inspection only: no chain state, simulation, sender or contract behavior verified.\",\n    \"Selectors can collide; an ABI pattern match does not prove ERC-20 behavior.\",\n    \"EIP-1559 arithmetic only; caller must establish that these rules apply to the supplied context.\",\n    \"Base fee is unverified input, not a live quote or prediction. Token destination does not change the native gas asset.\",\n    \"Ceilings use gasLimit, not gas used; actual gas charges, refunds, execution, balance, nonce, block limits and inclusion are unverified.\",\n    \"No sender is supplied. Value plus fee ceiling is arithmetic, not proof of funds or safety to sign.\"\n  ]\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-3/tools/fee-context/fee_context.py",
+    "--base-fee-wei",
+    "1000000000",
+    "--context-chain",
+    "1",
+    "--demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:33.274234+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

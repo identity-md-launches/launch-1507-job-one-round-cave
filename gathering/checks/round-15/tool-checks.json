@@ -1,0 +1,1263 @@
+[
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-1/tools/batch-capture",
+      "-p",
+      "test_batch_capture.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 26
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-1/tools/block-audit",
+      "-p",
+      "test_block_audit.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 7
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-1/tools/direct-capture",
+      "-p",
+      "test_direct_capture.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 14
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-1/tools/endpoint-policy",
+      "-p",
+      "test_policy.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 10
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-1/tools/hash-snapshot",
+      "-p",
+      "test_hash_snapshot.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 20
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-1/tools/pinned-snapshot",
+      "-p",
+      "test_pinned.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 11
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-1/tools/pinned-transport-check",
+      "-p",
+      "test_pinned_transport.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 4
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-1/tools/snapshot-check",
+      "-p",
+      "test_checks.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 6
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-1/tools/snapshot-compare",
+      "-p",
+      "test_snapshot_compare.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 11
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-1/tools/snapshot-crosscheck",
+      "-p",
+      "test_snapshot_crosscheck.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 12
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-1/tools/snapshot-replay",
+      "-p",
+      "test_replay.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 23
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-1/tools/snapshot-seal",
+      "-p",
+      "test_snapshot_seal.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 17
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-2/tools/handoff-catalog",
+      "-p",
+      "test_catalog.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 9
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-2/tools/handoff-compare",
+      "-p",
+      "test_compare.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 19
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-2/tools/handoff-content",
+      "-p",
+      "test_content.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 10
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-2/tools/handoff-contract",
+      "-p",
+      "test_contract.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 4
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-2/tools/handoff-inspect",
+      "-p",
+      "test_inspect.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 19
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-2/tools/handoff-landing",
+      "-p",
+      "test_landing.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 17
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-2/tools/handoff-portability",
+      "-p",
+      "test_portability.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 23
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-2/tools/handoff-reproduce",
+      "-p",
+      "test_reproduce.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 11
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-2/tools/handoff-review",
+      "-p",
+      "test_review.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 33
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-2/tools/handoff-source",
+      "-p",
+      "test_source.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 21
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/access-list-audit",
+      "-p",
+      "test_access_audit.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 14
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/amount-view",
+      "-p",
+      "test_amount_view.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 14
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/calldata-words",
+      "-p",
+      "test_word_view.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 7
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/canonical-envelope",
+      "-p",
+      "test_envelope.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 5
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/erc20-intent",
+      "-p",
+      "test_intent.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 11
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/fee-context",
+      "-p",
+      "test_fee_context.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 15
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/fee-horizon",
+      "-p",
+      "test_fee_horizon.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 7
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/gas-budget",
+      "-p",
+      "test_gas_budget.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 14
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/keccak-envelope",
+      "-p",
+      "test_keccak_envelope.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 6
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/rlp-byte-map",
+      "-p",
+      "test_byte_map.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 4
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/rpc-unsigned-reader",
+      "-p",
+      "test_rpc_reader.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 12
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/unsigned-diff",
+      "-p",
+      "test_unsigned_diff.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 10
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/unsigned-guard",
+      "-p",
+      "test_guard.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 8
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-3/tools/zto-eip1559-decoder",
+      "-p",
+      "test_decoder.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 12
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-4/tools/bounded-capture-reader",
+      "-p",
+      "test_reader.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 15
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-4/tools/erc20-transfer-window",
+      "-p",
+      "test_transfer_window.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 21
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-4/tools/transfer-counterparties",
+      "-p",
+      "test_counterparties.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 9
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-4/tools/transfer-crosscheck",
+      "-p",
+      "test_crosscheck.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 21
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-4/tools/transfer-window-activity",
+      "-p",
+      "test_activity.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 3
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-4/tools/transfer-window-coverage",
+      "-p",
+      "test_coverage.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 6
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-4/tools/transfer-window-ledger",
+      "-p",
+      "test_ledger.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 12
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-4/tools/transfer-window-receipt",
+      "-p",
+      "test_receipt.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 5
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "line-4/tools/transfer-window-stitch",
+      "-p",
+      "test_stitch.py",
+      "-v"
+    ],
+    "exit": 0,
+    "kind": "suite",
+    "tests_run": 9
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-1/tools/transport-check/transport_check.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-1/tools/direct-capture/direct_capture.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-1/tools/hash-snapshot/hash_snapshot.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-1/tools/batch-capture/batch_capture.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-1/tools/endpoint-policy/endpoint_policy.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-1/tools/snapshot-replay/replay.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-1/tools/snapshot-compare/snapshot_compare.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/handoff/handoff.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/handoff/handoff.py",
+      "verify",
+      "line-2/handoff.zip"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/handoff-inspect/inspect_handoff.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/handoff-compare/compare_handoff.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/handoff-source/source_check.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/handoff-portability/portability.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/handoff-contract/contract.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/handoff-catalog/catalog.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/handoff-reproduce/reproduce.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/handoff-content/content.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/handoff-review/review.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/zto-eip1559-decoder/tx_decode.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/erc20-intent/intent.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/rpc-unsigned-reader/rpc_reader.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/unsigned-diff/unsigned_diff.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/unsigned-guard/guard.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/gas-budget/gas_budget.py",
+      "--profile",
+      "prague",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/fee-context/fee_context.py",
+      "--base-fee-wei",
+      "1000000000",
+      "--context-chain",
+      "1",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/calldata-words/word_view.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/access-list-audit/access_audit.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-crosscheck/crosscheck.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-window-receipt/receipt.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-window-coverage/coverage.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-window-activity/activity.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-counterparties/counterparties.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-1/tools/snapshot-crosscheck/snapshot_crosscheck.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/fee-horizon/fee_horizon.py",
+      "--demo",
+      "--parent-base-fee-wei",
+      "1000000000",
+      "--blocks",
+      "4"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/bounded-capture-reader/reader.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/keccak-envelope/keccak_envelope.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-window-stitch/stitch.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-2/tools/handoff-landing/landing.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/rlp-byte-map/byte_map.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-4/tools/transfer-window-ledger/ledger.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-1/tools/snapshot-seal/snapshot_seal.py",
+      "seal",
+      "line-1/tools/pinned-snapshot/example-zto.json"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-1/tools/pinned-transport-check/pinned_transport_check.py",
+      "demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/amount-view/amount_view.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  },
+  {
+    "command": [
+      "python3",
+      "-B",
+      "line-3/tools/canonical-envelope/envelope.py",
+      "--demo"
+    ],
+    "exit": 0,
+    "kind": "demo",
+    "tests_run": 0
+  }
+]

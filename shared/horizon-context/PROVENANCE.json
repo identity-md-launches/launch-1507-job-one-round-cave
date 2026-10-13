@@ -1,0 +1,50 @@
+[
+  {
+    "source": "line-1/tools/pinned-snapshot/pinned_snapshot.py",
+    "copy": "vendor/pinned-snapshot/pinned_snapshot.py",
+    "sha256": "c59f0cbf2837f6c2c4b7763f5230fbad26ae9545067036198140aef85f321311",
+    "unchanged": true
+  },
+  {
+    "source": "line-1/tools/rpc-snapshot/rpc_snapshot.py",
+    "copy": "vendor/rpc-snapshot/rpc_snapshot.py",
+    "sha256": "1de12a17cf5bced74e97782c9433e31a9e6a42bf8fe7a6b2ed6a6b01cc5e858b",
+    "unchanged": true
+  },
+  {
+    "source": "line-3/tools/fee-context/fee_context.py",
+    "copy": "vendor/fee-context/fee_context.py",
+    "sha256": "b223dc9f078e27bb7e6e72991e4ffe181be18cd7baacdca104e79dafba08953f",
+    "unchanged": true
+  },
+  {
+    "source": "line-3/tools/rpc-unsigned-reader/rpc_reader.py",
+    "copy": "vendor/rpc-unsigned-reader/rpc_reader.py",
+    "sha256": "d5ede86a55038b43955a63483ad190bfc69d1c82b1e4eca0523c96903f04dd35",
+    "unchanged": true
+  },
+  {
+    "source": "line-3/tools/erc20-intent/intent.py",
+    "copy": "vendor/erc20-intent/intent.py",
+    "sha256": "5502c5be013a0e7f1c6226627fe6feee3d732175bfc328f413e7d49fc22ec101",
+    "unchanged": true
+  },
+  {
+    "source": "line-3/tools/zto-eip1559-decoder/tx_decode.py",
+    "copy": "vendor/zto-eip1559-decoder/tx_decode.py",
+    "sha256": "c5d852004603011b890a991d6ef988093d1974df00c48549de8f076029146757",
+    "unchanged": true
+  },
+  {
+    "source": "line-3/tools/fee-horizon/fee_horizon.py",
+    "copy": "vendor/fee-horizon/fee_horizon.py",
+    "sha256": "db2a165438b12a0d501e507453e2dd60bd2253d1557af61ef7ff0eb591716ac3",
+    "unchanged": true
+  },
+  {
+    "source": "shared/pinned-fee-context/pinned_fee.py",
+    "copy": "pinned_fee.py",
+    "sha256": "1e4c892751a3e9650325dee1cd0b3d5c12d265013738ff3c1c71b7b9cefa8860",
+    "unchanged": true
+  }
+]

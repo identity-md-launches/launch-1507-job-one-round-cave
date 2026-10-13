@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_changed_height_is_rejected (test_block_audit.AuditTests.test_changed_height_is_rejected) ... ok\ntest_different_hash_is_reported_without_claiming_reorg (test_block_audit.AuditTests.test_different_hash_is_reported_without_claiming_reorg) ... ok\ntest_duplicate_keys_rejected (test_block_audit.AuditTests.test_duplicate_keys_rejected) ... ok\ntest_invalid_snapshot_is_rejected_before_provider_read (test_block_audit.AuditTests.test_invalid_snapshot_is_rejected_before_provider_read) ... ok\ntest_matching_anchor (test_block_audit.AuditTests.test_matching_anchor) ... ok\ntest_missing_height_is_unavailable (test_block_audit.AuditTests.test_missing_height_is_unavailable) ... ok\ntest_wrong_chain_is_rejected_before_block_lookup (test_block_audit.AuditTests.test_wrong_chain_is_rejected_before_block_lookup) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.002s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/block-audit",
+    "-p",
+    "test_block_audit.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 7,
+  "checked_at": "2026-10-13T05:29:56.656633+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

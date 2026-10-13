@@ -1,0 +1,13 @@
+{
+  "captured_at": "2026-10-13T05:30:36Z",
+  "endpoint": "https://ethereum-rpc.publicnode.com",
+  "method": "eth_call",
+  "params": [
+    {
+      "data": "0x18160ddd",
+      "to": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e"
+    },
+    "finalized"
+  ],
+  "result": "0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000"
+}

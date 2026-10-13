@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"archive_bytes\": 13181,\n  \"archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n  \"byte_reproducible\": true,\n  \"demo\": \"actual inherited handoff; no extraction or payload execution\",\n  \"file_count\": 2,\n  \"first_difference_offset\": null,\n  \"format\": \"handoff-reproduction-v1\",\n  \"payload_bytes\": 12603,\n  \"profile\": \"original-handoff-v1-writer\",\n  \"rebuilt_bytes\": 13181,\n  \"rebuilt_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n  \"trusted_digest_matched\": false,\n  \"verified\": true\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-reproduce/reproduce.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:32.332386+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

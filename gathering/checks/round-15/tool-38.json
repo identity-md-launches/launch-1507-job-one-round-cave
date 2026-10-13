@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_boundary_log_hash_mismatch_is_error (test_transfer_window.CaptureTests.test_boundary_log_hash_mismatch_is_error) ... ok\ntest_capture_optionally_emits_only_a_bounded_address_summary (test_transfer_window.CaptureTests.test_capture_optionally_emits_only_a_bounded_address_summary) ... ok\ntest_capture_pins_decimals_and_retains_evidence (test_transfer_window.CaptureTests.test_capture_pins_decimals_and_retains_evidence) ... ok\ntest_empty_result_is_success_but_invalid_or_wrong_chain_is_error (test_transfer_window.CaptureTests.test_empty_result_is_success_but_invalid_or_wrong_chain_is_error) ... ok\ntest_invalid_cli_ranges_do_not_network (test_transfer_window.CaptureTests.test_invalid_cli_ranges_do_not_network) ... ok\ntest_reorg_at_either_boundary_is_error (test_transfer_window.CaptureTests.test_reorg_at_either_boundary_is_error) ... ok\ntest_address_argument_is_strict (test_transfer_window.TransferTests.test_address_argument_is_strict) ... ok\ntest_address_summary_is_exact_and_self_transfer_is_both_directions (test_transfer_window.TransferTests.test_address_summary_is_exact_and_self_transfer_is_both_directions) ... ok\ntest_conflicting_duplicate_and_block_identity (test_transfer_window.TransferTests.test_conflicting_duplicate_and_block_identity) ... ok\ntest_decimal_and_hex_block_arguments (test_transfer_window.TransferTests.test_decimal_and_hex_block_arguments) ... ok\ntest_exact_unit_rendering (test_transfer_window.TransferTests.test_exact_unit_rendering) ... ok\ntest_gathering_findings_and_malformed_fields_are_rejected (test_transfer_window.TransferTests.test_gathering_findings_and_malformed_fields_are_rejected) ... ok\ntest_limit_does_not_truncate (test_transfer_window.TransferTests.test_limit_does_not_truncate) ... ok\ntest_real_logs_exact_values_sort_and_deduplication (test_transfer_window.TransferTests.test_real_logs_exact_values_sort_and_deduplication) ... ok\ntest_actual_loopback_http_and_redirects_never_reach_target (test_transfer_window.TransportTests.test_actual_loopback_http_and_redirects_never_reach_target) ... ok\ntest_exact_loopback_mainnet_relay_uses_same_readonly_transport (test_transfer_window.TransportTests.test_exact_loopback_mainnet_relay_uses_same_readonly_transport) ... ok\ntest_invalid_envelopes_are_controlled_errors (test_transfer_window.TransportTests.test_invalid_envelopes_are_controlled_errors) ... ok\ntest_no_proxy_discovery_or_global_opener (test_transfer_window.TransportTests.test_no_proxy_discovery_or_global_opener) ... ok\ntest_nonread_methods_and_credential_endpoints_never_network (test_transfer_window.TransportTests.test_nonread_methods_and_credential_endpoints_never_network) ... ok\ntest_response_limit_and_network_error (test_transfer_window.TransportTests.test_response_limit_and_network_error) ... ok\ntest_valid_envelope_user_agent_and_read_method (test_transfer_window.TransportTests.test_valid_envelope_user_agent_and_read_method) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 1.846s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/erc20-transfer-window",
+    "-p",
+    "test_transfer_window.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 21,
+  "checked_at": "2026-10-13T05:30:26.905168+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

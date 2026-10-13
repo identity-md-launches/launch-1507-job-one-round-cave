@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_actual_inherited_bundle (test_inspect.InspectTests.test_actual_inherited_bundle) ... ok\ntest_bad_crc (test_inspect.InspectTests.test_bad_crc) ... ok\ntest_bad_manifest_structures (test_inspect.InspectTests.test_bad_manifest_structures) ... ok\ntest_budget_refusals_before_zipfile_load (test_inspect.InspectTests.test_budget_refusals_before_zipfile_load) ... ok\ntest_crc_valid_content_tampering (test_inspect.InspectTests.test_crc_valid_content_tampering) ... ok\ntest_current_real_tool_package (test_inspect.InspectTests.test_current_real_tool_package) ... ok\ntest_digest_and_exact_budgets (test_inspect.InspectTests.test_digest_and_exact_budgets) ... ok\ntest_duplicate_and_unlisted_entries (test_inspect.InspectTests.test_duplicate_and_unlisted_entries) ... ok\ntest_duplicate_json_keys_and_nonstandard_json (test_inspect.InspectTests.test_duplicate_json_keys_and_nonstandard_json) ... ok\ntest_inconsistent_local_metadata_and_overlap (test_inspect.InspectTests.test_inconsistent_local_metadata_and_overlap) ... ok\ntest_invalid_limits (test_inspect.InspectTests.test_invalid_limits) ... ok\ntest_missing_manifest (test_inspect.InspectTests.test_missing_manifest) ... ok\ntest_outside_paths_rejected_before_open (test_inspect.InspectTests.test_outside_paths_rejected_before_open) ... ok\ntest_plain_comment (test_inspect.InspectTests.test_plain_comment) ... ok\ntest_streaming_reads_are_bounded (test_inspect.InspectTests.test_streaming_reads_are_bounded) ... ok\ntest_truncated_prefix_trailer_and_multidisk (test_inspect.InspectTests.test_truncated_prefix_trailer_and_multidisk) ... ok\ntest_unicode_and_empty_file (test_inspect.InspectTests.test_unicode_and_empty_file) ... ok\ntest_unsafe_names (test_inspect.InspectTests.test_unsafe_names) ... ok\ntest_unsupported_zip_features (test_inspect.InspectTests.test_unsupported_zip_features) ... ok\n\n----------------------------------------------------------------------\nRan 19 tests in 0.053s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-inspect",
+    "-p",
+    "test_inspect.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 19,
+  "checked_at": "2026-10-13T05:30:12.008348+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

@@ -1,0 +1,11 @@
+{
+  "from_block": 26177298,
+  "kind": "bounded-transfer-capture-check",
+  "limitations": "Local validation of retained provider evidence; not a fresh chain read, completeness or finality proof.",
+  "max_capture_bytes": 16777216,
+  "raw_logs_revalidated": true,
+  "read_only": true,
+  "to_block": 26177309,
+  "token": "ZTO",
+  "transfer_count": 3
+}

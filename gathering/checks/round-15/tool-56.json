@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"added\": [\n    {\n      \"bytes\": 42,\n      \"path\": \"PROPOSED-HANDOFF-NOTE.md\",\n      \"sha256\": \"41cb9f38d4c1bc9e7a6b74dcd71b4ee02ae6f6959c5429a4b0a47b3fc7f0d321\"\n    }\n  ],\n  \"after\": {\n    \"archive_bytes\": 13470,\n    \"archive_sha256\": \"9209579ba85e9bc81c51fdb66319a1e7769d2e51e8c9f5bc2dcca11d52edb64a\",\n    \"file_count\": 3,\n    \"payload_bytes\": 12645,\n    \"trusted_digest_matched\": false\n  },\n  \"before\": {\n    \"archive_bytes\": 13181,\n    \"archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n    \"file_count\": 2,\n    \"payload_bytes\": 12603,\n    \"trusted_digest_matched\": false\n  },\n  \"counts\": {\n    \"added\": 1,\n    \"modified\": 0,\n    \"removed\": 0,\n    \"unchanged\": 2\n  },\n  \"demo\": \"real inherited bundle versus an in-memory proposed note addition\",\n  \"format\": \"handoff-comparison-v1\",\n  \"modified\": [],\n  \"note\": \"Integrity is not authenticity without independently trusted archive hashes. Renames are reported as removal plus addition; payload code is never executed.\",\n  \"payload_byte_delta\": 42,\n  \"removed\": [],\n  \"same_archive\": false,\n  \"same_payload\": false,\n  \"unchanged\": [\n    \"README.md\",\n    \"handoff.py\"\n  ],\n  \"verified\": true\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-compare/compare_handoff.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:31.434783+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

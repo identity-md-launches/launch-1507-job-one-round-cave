@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_boundary_disagreement (test_crosscheck.CrosscheckTests.test_boundary_disagreement) ... ok\ntest_conflicting_event (test_crosscheck.CrosscheckTests.test_conflicting_event) ... ok\ntest_current_producer_to_crosscheck_and_receipt (test_crosscheck.CrosscheckTests.test_current_producer_to_crosscheck_and_receipt) ... ok\ntest_distinct_ranges_disagree (test_crosscheck.CrosscheckTests.test_distinct_ranges_disagree) ... ok\ntest_duplicates_do_not_create_disagreement (test_crosscheck.CrosscheckTests.test_duplicates_do_not_create_disagreement) ... ok\ntest_legacy_summary_and_unknown_schema_rejected (test_crosscheck.CrosscheckTests.test_legacy_summary_and_unknown_schema_rejected) ... ok\ntest_live_mode_pins_same_range (test_crosscheck.CrosscheckTests.test_live_mode_pins_same_range) ... ok\ntest_malformed_captures_fail (test_crosscheck.CrosscheckTests.test_malformed_captures_fail) ... ok\ntest_missing_event_is_disagreement (test_crosscheck.CrosscheckTests.test_missing_event_is_disagreement) ... ok\ntest_object_key_order_does_not_change_valid_transfers (test_crosscheck.CrosscheckTests.test_object_key_order_does_not_change_valid_transfers) ... ok\ntest_order_does_not_create_disagreement (test_crosscheck.CrosscheckTests.test_order_does_not_create_disagreement) ... ok\ntest_raw_evidence_is_revalidated (test_crosscheck.CrosscheckTests.test_raw_evidence_is_revalidated) ... ok\ntest_real_agreement (test_crosscheck.CrosscheckTests.test_real_agreement) ... ok\ntest_retained_captures_remain_valid (test_crosscheck.CrosscheckTests.test_retained_captures_remain_valid) ... ok\ntest_same_url_rejected (test_crosscheck.CrosscheckTests.test_same_url_rejected) ... ok\ntest_schema3_summary_tampering_rejected_by_both_companions (test_crosscheck.CrosscheckTests.test_schema3_summary_tampering_rejected_by_both_companions) ... ok\ntest_second_provider_failure_has_no_agreement_output (test_crosscheck.CrosscheckTests.test_second_provider_failure_has_no_agreement_output) ... ok\ntest_transfer_collection_structure_is_strict (test_crosscheck.CrosscheckTests.test_transfer_collection_structure_is_strict) ... ok\ntest_transfer_event_schema_and_string_types_are_strict (test_crosscheck.CrosscheckTests.test_transfer_event_schema_and_string_types_are_strict) ... ok\ntest_transfer_integer_fields_reject_equal_booleans (test_crosscheck.CrosscheckTests.test_transfer_integer_fields_reject_equal_booleans) ... ok\ntest_transfer_integer_fields_reject_equal_floats (test_crosscheck.CrosscheckTests.test_transfer_integer_fields_reject_equal_floats) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.100s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/transfer-crosscheck",
+    "-p",
+    "test_crosscheck.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 21,
+  "checked_at": "2026-10-13T05:30:27.537522+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

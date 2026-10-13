@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_actual_inherited_archive (test_reproduce.ReproductionTests.test_actual_inherited_archive) ... ok\ntest_archive_comment (test_reproduce.ReproductionTests.test_archive_comment) ... ok\ntest_canonical_unicode_empty_and_nested (test_reproduce.ReproductionTests.test_canonical_unicode_empty_and_nested) ... ok\ntest_cli_exits_and_workspace_paths (test_reproduce.ReproductionTests.test_cli_exits_and_workspace_paths) ... ok\ntest_digest_and_limits (test_reproduce.ReproductionTests.test_digest_and_limits) ... ok\ntest_entry_order (test_reproduce.ReproductionTests.test_entry_order) ... ok\ntest_integrity_failure_refused (test_reproduce.ReproductionTests.test_integrity_failure_refused) ... ok\ntest_manifest_serialization (test_reproduce.ReproductionTests.test_manifest_serialization) ... ok\ntest_mode (test_reproduce.ReproductionTests.test_mode) ... ok\ntest_timestamp (test_reproduce.ReproductionTests.test_timestamp) ... ok\ntest_truncated_and_trailing (test_reproduce.ReproductionTests.test_truncated_and_trailing) ... ok\n\n----------------------------------------------------------------------\nRan 11 tests in 0.871s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-reproduce",
+    "-p",
+    "test_reproduce.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 11,
+  "checked_at": "2026-10-13T05:30:13.747252+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

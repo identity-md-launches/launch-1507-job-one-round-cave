@@ -1,0 +1,79 @@
+{
+  "conflicts": [],
+  "evidence": {
+    "left": {
+      "captured_at": "2026-10-13T05:33:41Z",
+      "chain_id": 1,
+      "decimals": 18,
+      "decimals_block": 26181490,
+      "duplicate_count": 0,
+      "from_block": 26181489,
+      "from_block_anchor": {
+        "hash": "0xd96fb86055827e85f67ac21b61c10a6fbe8416a98110f4a90bbf2575996eca67",
+        "number": 26181489
+      },
+      "head_at_capture": 26181504,
+      "limitations": "Single-provider observation; not a completeness or finality proof. Interior block hashes are retained but not independently verified.",
+      "provider_result": "validated",
+      "raw_logs": [],
+      "read_only": true,
+      "rpc": "https://ethereum-rpc.publicnode.com",
+      "schema_version": 3,
+      "to_block": 26181490,
+      "to_block_anchor": {
+        "hash": "0x226f636226d79d24ea5552833dd6c803b3348acc57a0a85c5748ebabec15868a",
+        "number": 26181490
+      },
+      "token": "ZTO",
+      "token_address": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "transfer_count": 0,
+      "transfers": []
+    },
+    "right": {
+      "captured_at": "2026-10-13T05:33:42Z",
+      "chain_id": 1,
+      "decimals": 18,
+      "decimals_block": 26181490,
+      "duplicate_count": 0,
+      "from_block": 26181489,
+      "from_block_anchor": {
+        "hash": "0xd96fb86055827e85f67ac21b61c10a6fbe8416a98110f4a90bbf2575996eca67",
+        "number": 26181489
+      },
+      "head_at_capture": 26181504,
+      "limitations": "Single-provider observation; not a completeness or finality proof. Interior block hashes are retained but not independently verified.",
+      "provider_result": "validated",
+      "raw_logs": [],
+      "read_only": true,
+      "rpc": "https://eth.drpc.org",
+      "schema_version": 3,
+      "to_block": 26181490,
+      "to_block_anchor": {
+        "hash": "0x226f636226d79d24ea5552833dd6c803b3348acc57a0a85c5748ebabec15868a",
+        "number": 26181490
+      },
+      "token": "ZTO",
+      "token_address": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+      "transfer_count": 0,
+      "transfers": []
+    }
+  },
+  "from_block": 26181489,
+  "limitations": "Agreement corroborates two provider observations; it does not prove completeness, provider independence, finality, or current balances.",
+  "metadata_differences": [],
+  "only_left": [],
+  "only_right": [],
+  "providers": [
+    "https://ethereum-rpc.publicnode.com",
+    "https://eth.drpc.org"
+  ],
+  "read_only": true,
+  "schema_version": 1,
+  "status": "agreement",
+  "to_block": 26181490,
+  "token": "ZTO",
+  "transfer_counts": [
+    0,
+    0
+  ]
+}

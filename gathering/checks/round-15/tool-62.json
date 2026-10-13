@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"archive_sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\",\n  \"changed\": [],\n  \"content_passed\": true,\n  \"exact\": true,\n  \"expectation_sha256\": \"d783bc788f75ea6535b9f1bced71c8dfb90553d1adb4723d81b1aa52ed23413d\",\n  \"format\": \"handoff-content-check-v1\",\n  \"matched\": [\n    \"README.md\",\n    \"handoff.py\"\n  ],\n  \"missing\": [],\n  \"note\": \"Integrity and expected bytes were checked; authenticity depends on independently trusted expectations. No payload was extracted or executed.\",\n  \"unexpected\": [],\n  \"verified\": true\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-content/content.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:32.472566+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

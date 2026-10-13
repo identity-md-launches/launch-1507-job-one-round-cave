@@ -1,0 +1,17 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"checkedViolations\": [],\n  \"counts\": {\n    \"accessAddressOccurrences\": \"0\",\n    \"accessStorageKeyOccurrences\": \"0\",\n    \"calldataTokens\": \"16\",\n    \"dataBytes\": \"4\",\n    \"initcodeWords\": \"0\",\n    \"nonzeroBytes\": \"4\",\n    \"uniqueAccessAddresses\": \"0\",\n    \"uniqueAddressStorageKeyPairs\": \"0\",\n    \"zeroBytes\": \"0\"\n  },\n  \"gas\": {\n    \"aboveMinimumGas\": \"78840\",\n    \"calldataFloorGas\": \"21160\",\n    \"components\": {\n      \"accessAddressGas\": \"0\",\n      \"accessStorageKeyGas\": \"0\",\n      \"baseGas\": \"21000\",\n      \"creationGas\": \"0\",\n      \"initcodeWordGas\": \"0\",\n      \"nonzeroByteGas\": \"64\",\n      \"zeroByteGas\": \"0\"\n    },\n    \"gasLimitMeetsMinimum\": true,\n    \"intrinsicGas\": \"21064\",\n    \"meaning\": \"Lower bound only, not an estimate of EVM execution or gas used.\",\n    \"requiredMinimumGasLimit\": \"21160\",\n    \"shortfallGas\": \"0\",\n    \"suppliedGasLimit\": \"100000\"\n  },\n  \"initcode\": {\n    \"isCreation\": false,\n    \"maximumBytes\": null,\n    \"sizeWithinLimit\": null,\n    \"wordMeteringApplied\": false\n  },\n  \"inputFormat\": \"rlp\",\n  \"inspection\": {\n    \"calldata\": {\n      \"arguments\": {},\n      \"candidateMethod\": \"totalSupply\",\n      \"selector\": \"0x18160ddd\",\n      \"status\": \"abi-pattern-match\"\n    },\n    \"destinationLabel\": \"ZTO\",\n    \"feeBudget\": {\n      \"gasFeeCapWei\": \"200000000000000\",\n      \"meaning\": \"Gas limit times maximum fee per gas; excludes token transfers. Not an estimate.\",\n      \"valuePlusGasFeeCapWei\": \"200000000000000\"\n    },\n    \"transaction\": {\n      \"accessList\": [],\n      \"calldataSelector\": \"0x18160ddd\",\n      \"chainId\": \"1\",\n      \"data\": \"0x18160ddd\",\n      \"gasLimit\": \"100000\",\n      \"maxFeePerGas\": \"2000000000\",\n      \"maxPriorityFeePerGas\": \"1000000000\",\n      \"nonce\": \"0\",\n      \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n      \"type\": \"EIP-1559\",\n      \"typeByte\": \"0x02\",\n      \"value\": \"0\"\n    },\n    \"warnings\": [\n      \"Offline inspection only: no chain state, simulation, sender or contract behavior verified.\",\n      \"Selectors can collide; an ABI pattern match does not prove ERC-20 behavior.\"\n    ]\n  },\n  \"passesCheckedConstraints\": true,\n  \"profile\": \"prague\",\n  \"schema\": \"gas-budget/v1\",\n  \"warnings\": [\n    \"Offline inspection only: no chain state, simulation, sender or contract behavior verified.\",\n    \"Selectors can collide; an ABI pattern match does not prove ERC-20 behavior.\",\n    \"Explicit historical gas profile only; no activation, execution, base fee, block limits, balance, nonce, refunds or safety to sign checked. Passing is not transaction validity.\"\n  ]\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-3/tools/gas-budget/gas_budget.py",
+    "--profile",
+    "prague",
+    "--demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:33.192309+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

@@ -1,3 +1,51 @@
+# Current gathering: 15
+
+The Sheltered Embers adds a generated ochre-and-charcoal motif to ancestral
+vacant rock. All four lines were checked; Horizon context joins Line 3's
+hypothetical fee paths to Line 1's real pinned ZTO block evidence. No coin needed.
+
+Run the new standalone shared piece offline:
+
+```sh
+python3 -B shared/horizon-context/horizon_context.py demo
+```
+
+Recheck output formats, records, gallery, provenance, allowed paths, file sizes
+and unchanged line folders:
+
+```sh
+python3 -B gathering/check_round15_deliverable.py
+```
+
+The line run passed **45 suites / 567 tests and 44 offline demonstrations**.
+The shared kit passed **10 integration tests**. Native fresh ZTO supply and
+transfer reads and two-provider checks succeeded; historical PublicNode HTTP
+403 and the native horizon's extreme uint256 refusal are retained in receipts.
+See `REPORT.md` for line findings, narrowing guidance and what each trial means.
+
+Required output: `artifacts/gathering/wall-v16.png`; continuation: `wall.png`.
+Both are **1254×1254 RGB PNGs**, SHA-256
+`a41ce04a44bd5af2e8cb5aef685d541119d5d4915be7282e334c704a985bac0a`.
+Record: `dist/gathering/15.json`; preview: `15.jpg`, **512×512 JPEG**.
+Installed built-in image generation made the motif. Final prompt and the
+confined pigment-composition method are in `IMAGE-PROMPT-15.md`.
+
+The PNG and JPEG were decoded and visually inspected; no known unmet visual
+requirement. **4,305 changed pixels, zero outside `(725,180,145,100)`**.
+Pepe and each five-digit inherited hand remain unchanged. Inherited
+photographic-looking rock and subdued thumbnail pigment are retained
+limitations; review is local, not independent artistic certification.
+
+`build_gallery.py` rebuilds exact goals and the static 161-record gallery.
+`check_round15.py` runs the reviewed line checks in a workspace scratch mirror;
+`try_round15.py` performs optional read-only public-chain trials. The finish
+script is a one-time helper requiring the original generated insert and
+ancestral wall, not the already-finished files. All runtime dependencies
+are ordinary committed-source files; no installation or network is needed
+for the shared demo or deliverable checker.
+
+---
+
 # Current gathering: 14
 
 The Joined Bowls adds a small pigment mark to ancestral vacant rock. The report

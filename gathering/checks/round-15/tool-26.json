@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_demo_matches_inherited_bytes_and_inspection (test_envelope.EnvelopeTests.test_demo_matches_inherited_bytes_and_inspection) ... ok\ntest_invalid_and_signed_json_rejected_without_output (test_envelope.EnvelopeTests.test_invalid_and_signed_json_rejected_without_output) ... ok\ntest_long_payload_creation_duplicates_and_input_alias (test_envelope.EnvelopeTests.test_long_payload_creation_duplicates_and_input_alias) ... ok\ntest_minimal_canonical_vector (test_envelope.EnvelopeTests.test_minimal_canonical_vector) ... ok\ntest_uint256_and_field_boundaries (test_envelope.EnvelopeTests.test_uint256_and_field_boundaries) ... ok\n\n----------------------------------------------------------------------\nRan 5 tests in 0.004s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/canonical-envelope",
+    "-p",
+    "test_envelope.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 5,
+  "checked_at": "2026-10-13T05:30:19.499256+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

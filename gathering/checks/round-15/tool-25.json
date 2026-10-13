@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_cli_demo_and_error_exit (test_word_view.WordViewTests.test_cli_demo_and_error_exit) ... ok\ntest_demo_exact_offsets_and_values (test_word_view.WordViewTests.test_demo_exact_offsets_and_values) ... ok\ntest_empty_and_short_data (test_word_view.WordViewTests.test_empty_and_short_data) ... ok\ntest_initcode_has_no_method_selector (test_word_view.WordViewTests.test_initcode_has_no_method_selector) ... ok\ntest_json_and_rlp_have_same_word_view (test_word_view.WordViewTests.test_json_and_rlp_have_same_word_view) ... ok\ntest_remainder_is_not_presented_as_a_full_word (test_word_view.WordViewTests.test_remainder_is_not_presented_as_a_full_word) ... ok\ntest_signed_noncanonical_and_ambiguous_input_refused (test_word_view.WordViewTests.test_signed_noncanonical_and_ambiguous_input_refused) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 0.314s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/calldata-words",
+    "-p",
+    "test_word_view.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 7,
+  "checked_at": "2026-10-13T05:30:19.215862+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

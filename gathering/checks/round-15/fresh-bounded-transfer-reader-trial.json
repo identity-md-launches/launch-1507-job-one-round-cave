@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "-B",
+    "line-4/tools/bounded-capture-reader/reader.py",
+    "--capture",
+    "gathering/checks/round-15/historical-zto-drpc.json"
+  ],
+  "exit": 0,
+  "stdout": "{\n  \"from_block\": 26177298,\n  \"kind\": \"bounded-transfer-capture-check\",\n  \"limitations\": \"Local validation of retained provider evidence; not a fresh chain read, completeness or finality proof.\",\n  \"max_capture_bytes\": 16777216,\n  \"raw_logs_revalidated\": true,\n  \"read_only\": true,\n  \"to_block\": 26177309,\n  \"token\": \"ZTO\",\n  \"transfer_count\": 3\n}\n",
+  "stderr": "",
+  "checked_at": "2026-10-13T05:33:40.307253+00:00"
+}

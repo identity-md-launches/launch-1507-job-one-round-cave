@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_access_list_must_match_exact_order_and_duplicate_slots (test_guard.GuardTests.test_access_list_must_match_exact_order_and_duplicate_slots) ... ok\ntest_bad_envelopes_are_rejected_before_any_report (test_guard.GuardTests.test_bad_envelopes_are_rejected_before_any_report) ... ok\ntest_cli_exit_codes_and_no_partial_json (test_guard.GuardTests.test_cli_exit_codes_and_no_partial_json) ... ok\ntest_contract_creation_requires_explicit_creation_destination (test_guard.GuardTests.test_contract_creation_requires_explicit_creation_destination) ... ok\ntest_each_exact_field_mutation_is_reported (test_guard.GuardTests.test_each_exact_field_mutation_is_reported) ... ok\ntest_fee_caps_are_upper_bounds_and_priority_order_is_checked (test_guard.GuardTests.test_fee_caps_are_upper_bounds_and_priority_order_is_checked) ... ok\ntest_policy_input_rejects_ambiguity_and_oversize (test_guard.GuardTests.test_policy_input_rejects_ambiguity_and_oversize) ... ok\ntest_synthetic_zto_demo_matches_all_fields (test_guard.GuardTests.test_synthetic_zto_demo_matches_all_fields) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.009s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/unsigned-guard",
+    "-p",
+    "test_guard.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 8,
+  "checked_at": "2026-10-13T05:30:23.469914+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

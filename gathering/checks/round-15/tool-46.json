@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"checks\": [\n    \"retained-zto-replay\",\n    \"exact-request\",\n    \"own-user-agent\",\n    \"no-proxy-discovery\",\n    \"no-default-urlopen\",\n    \"no-sockets\",\n    \"redirect-301\",\n    \"redirect-302\",\n    \"redirect-303\",\n    \"redirect-307\",\n    \"redirect-308\",\n    \"http-error\",\n    \"compression\",\n    \"wrong-id\",\n    \"boolean-id\",\n    \"duplicate-key\",\n    \"nonfinite\",\n    \"overflow-number\",\n    \"extra-field\",\n    \"provider-error\",\n    \"oversize\",\n    \"reject-before-wire\",\n    \"null-result-preserved\",\n    \"cli-failure-no-partial-output\",\n    \"cli-duplicate-params-rejected\"\n  ],\n  \"checks_passed\": 25,\n  \"limits\": \"Offline wire replay tests transport behavior; it is not a fresh chain observation or proof of provider honesty.\",\n  \"network_used\": false,\n  \"retained_evidence\": {\n    \"captured_at\": \"2026-10-12T22:01:30Z\",\n    \"sha256\": \"36153277456493108570367ff748920da8b76852b51ccd60224201f9b3a92e20\",\n    \"token\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n    \"total_supply_base_units\": \"1000000000000000000000000000\"\n  },\n  \"schema\": \"rpc-transport-check/1\",\n  \"status\": \"passed\"\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/transport-check/transport_check.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:29.841597+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

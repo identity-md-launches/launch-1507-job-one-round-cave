@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_build_is_sorted_and_replayable (test_catalog.CatalogTests.test_build_is_sorted_and_replayable) ... ok\ntest_canonical_requires_lowercase_digest (test_catalog.CatalogTests.test_canonical_requires_lowercase_digest) ... ok\ntest_changed_archive_is_refused (test_catalog.CatalogTests.test_changed_archive_is_refused) ... ok\ntest_duplicate_archive_is_refused (test_catalog.CatalogTests.test_duplicate_archive_is_refused) ... ok\ntest_duplicate_json_key_is_refused (test_catalog.CatalogTests.test_duplicate_json_key_is_refused) ... ok\ntest_empty_archive_list_is_refused (test_catalog.CatalogTests.test_empty_archive_list_is_refused) ... ok\ntest_noncanonical_catalog_is_refused (test_catalog.CatalogTests.test_noncanonical_catalog_is_refused) ... ok\ntest_outside_path_is_refused (test_catalog.CatalogTests.test_outside_path_is_refused) ... ok\ntest_same_inputs_are_deterministic (test_catalog.CatalogTests.test_same_inputs_are_deterministic) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.176s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-2/tools/handoff-catalog",
+    "-p",
+    "test_catalog.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 9,
+  "checked_at": "2026-10-13T05:30:10.176975+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

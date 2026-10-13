@@ -1,0 +1,16 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"canonical_snapshot_sha256\": \"751e072edfcd34f747bf728ecd6bd4b2e23d1a6a95fc611394834975203f3391\",\n  \"evidence_limits\": \"Integrity receipt for bytes and the pinned snapshot structure; not a signature, proof of provider honesty, finality, or current state.\",\n  \"observation\": {\n    \"block_hash\": \"0xf76539e08b42037cad963c2af646774753fce06ad37245bd1487b9e6ffa549ba\",\n    \"block_number\": \"26177368\",\n    \"token\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n    \"total_supply_base_units\": \"1000000000000000000000000000\"\n  },\n  \"schema\": \"pinned-zto-seal/1\",\n  \"snapshot_sha256\": \"6205954971cff1f2a84540d86de17124f6f78bdbce60c56e84f0c0527c34b271\"\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/snapshot-seal/snapshot_seal.py",
+    "seal",
+    "line-1/tools/pinned-snapshot/example-zto.json"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:37.063946+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

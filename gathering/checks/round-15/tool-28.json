@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_base_fee_above_cap (test_fee_context.FeeTests.test_base_fee_above_cap) ... ok\ntest_canonical_decimal (test_fee_context.FeeTests.test_canonical_decimal) ... ok\ntest_cap_boundary (test_fee_context.FeeTests.test_cap_boundary) ... ok\ntest_chain_context (test_fee_context.FeeTests.test_chain_context) ... ok\ntest_cli_exit_and_stdin (test_fee_context.FeeTests.test_cli_exit_and_stdin) ... ok\ntest_context_type_and_range (test_fee_context.FeeTests.test_context_type_and_range) ... ok\ntest_full_priority (test_fee_context.FeeTests.test_full_priority) ... ok\ntest_independent_random_arithmetic (test_fee_context.FeeTests.test_independent_random_arithmetic) ... ok\ntest_invalid_fee_order_even_at_zero_base (test_fee_context.FeeTests.test_invalid_fee_order_even_at_zero_base) ... ok\ntest_maximum_uint256_exact_products (test_fee_context.FeeTests.test_maximum_uint256_exact_products) ... ok\ntest_original_input_equivalence (test_fee_context.FeeTests.test_original_input_equivalence) ... ok\ntest_priority_clipped (test_fee_context.FeeTests.test_priority_clipped) ... ok\ntest_reject_signed_ambiguous_summary_and_oversize (test_fee_context.FeeTests.test_reject_signed_ambiguous_summary_and_oversize) ... ok\ntest_two_violations (test_fee_context.FeeTests.test_two_violations) ... ok\ntest_zero_fees_and_gas (test_fee_context.FeeTests.test_zero_fees_and_gas) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 1.154s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/fee-context",
+    "-p",
+    "test_fee_context.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 15,
+  "checked_at": "2026-10-13T05:30:21.028615+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

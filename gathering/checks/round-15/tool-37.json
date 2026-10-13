@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_consumer_cli_rejects_bad_input_cleanly (test_reader.ReaderTests.test_consumer_cli_rejects_bad_input_cleanly) ... ok\ntest_deep_json_refused_cleanly (test_reader.ReaderTests.test_deep_json_refused_cleanly) ... ok\ntest_directory_and_missing_file_rejected (test_reader.ReaderTests.test_directory_and_missing_file_rejected) ... ok\ntest_directory_symlink_rejected (test_reader.ReaderTests.test_directory_symlink_rejected) ... ok\ntest_fifo_rejected_without_blocking (test_reader.ReaderTests.test_fifo_rejected_without_blocking) ... ok\ntest_final_symlink_rejected (test_reader.ReaderTests.test_final_symlink_rejected) ... ok\ntest_invalid_limits (test_reader.ReaderTests.test_invalid_limits) ... ok\ntest_nesting_limit_ignores_escaped_string_delimiters (test_reader.ReaderTests.test_nesting_limit_ignores_escaped_string_delimiters) ... ok\ntest_outside_rejected_before_open (test_reader.ReaderTests.test_outside_rejected_before_open) ... ok\ntest_read_is_bounded_even_if_file_grows_after_stat (test_reader.ReaderTests.test_read_is_bounded_even_if_file_grows_after_stat) ... ok\ntest_real_zto_demo (test_reader.ReaderTests.test_real_zto_demo) ... ok\ntest_regular_file_and_exact_limit (test_reader.ReaderTests.test_regular_file_and_exact_limit) ... ok\ntest_strict_json (test_reader.ReaderTests.test_strict_json) ... ok\ntest_three_consumers_share_restrictions (test_reader.ReaderTests.test_three_consumers_share_restrictions) ... ok\ntest_traversal_rejected_before_open (test_reader.ReaderTests.test_traversal_rejected_before_open) ... ok\n\n----------------------------------------------------------------------\nRan 15 tests in 0.619s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/bounded-capture-reader",
+    "-p",
+    "test_reader.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 15,
+  "checked_at": "2026-10-13T05:30:24.710985+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

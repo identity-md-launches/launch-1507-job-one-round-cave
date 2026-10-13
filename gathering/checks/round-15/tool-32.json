@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_cli_success_and_failure (test_byte_map.ByteMapTests.test_cli_success_and_failure) ... ok\ntest_demo_covers_original_bytes (test_byte_map.ByteMapTests.test_demo_covers_original_bytes) ... ok\ntest_nested_access_list_and_long_prefix (test_byte_map.ByteMapTests.test_nested_access_list_and_long_prefix) ... ok\ntest_rejects_signed_noncanonical_and_extra_bytes (test_byte_map.ByteMapTests.test_rejects_signed_noncanonical_and_extra_bytes) ... ok\n\n----------------------------------------------------------------------\nRan 4 tests in 0.188s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/rlp-byte-map",
+    "-p",
+    "test_byte_map.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 4,
+  "checked_at": "2026-10-13T05:30:22.683164+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

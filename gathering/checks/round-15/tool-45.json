@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_adjacent_empty_windows_are_labeled_and_not_proof (test_stitch.StitchTests.test_adjacent_empty_windows_are_labeled_and_not_proof) ... ok\ntest_adjacent_windows_union_distinct_events (test_stitch.StitchTests.test_adjacent_windows_union_distinct_events) ... ok\ntest_decimals_disagreement_is_refused (test_stitch.StitchTests.test_decimals_disagreement_is_refused) ... ok\ntest_demo_pair_is_validated_real_evidence (test_stitch.StitchTests.test_demo_pair_is_validated_real_evidence) ... ok\ntest_disagreeing_overlap_events_are_refused (test_stitch.StitchTests.test_disagreeing_overlap_events_are_refused) ... ok\ntest_gap_is_refused (test_stitch.StitchTests.test_gap_is_refused) ... ok\ntest_real_zto_projection_joins_without_double_count (test_stitch.StitchTests.test_real_zto_projection_joins_without_double_count) ... ok\ntest_saved_summary_tampering_is_refused_first (test_stitch.StitchTests.test_saved_summary_tampering_is_refused_first) ... ok\ntest_shared_empty_block_hash_conflict_is_refused (test_stitch.StitchTests.test_shared_empty_block_hash_conflict_is_refused) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.019s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-4/tools/transfer-window-stitch",
+    "-p",
+    "test_stitch.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 9,
+  "checked_at": "2026-10-13T05:30:28.783144+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

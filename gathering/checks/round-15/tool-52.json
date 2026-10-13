@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"calls\": [\n    {\n      \"label\": \"IMD-decimals\",\n      \"request\": {\n        \"data\": \"0x313ce567\",\n        \"to\": \"0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7\"\n      },\n      \"result\": \"0x0000000000000000000000000000000000000000000000000000000000000012\",\n      \"status\": \"unchanged\"\n    },\n    {\n      \"label\": \"IMD-supply\",\n      \"request\": {\n        \"data\": \"0x18160ddd\",\n        \"to\": \"0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7\"\n      },\n      \"result\": \"0x0000000000000000000000000000000000000000000374662fb3405e8174a000\",\n      \"status\": \"unchanged\"\n    },\n    {\n      \"label\": \"ZTO-decimals\",\n      \"request\": {\n        \"data\": \"0x313ce567\",\n        \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\"\n      },\n      \"result\": \"0x0000000000000000000000000000000000000000000000000000000000000012\",\n      \"status\": \"unchanged\"\n    },\n    {\n      \"label\": \"ZTO-supply\",\n      \"request\": {\n        \"data\": \"0x18160ddd\",\n        \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\"\n      },\n      \"result\": \"0x0000000000000000000000000000000000000000033b2e3c9fd0803ce8000000\",\n      \"status\": \"unchanged\"\n    }\n  ],\n  \"evidence_limits\": \"Offline structural comparison only. It validates each provider bundle but does not authenticate either provider, prove finality, or prove why a value changed.\",\n  \"left_anchor\": {\n    \"block_hash\": \"0x29d210293990d54ba91744fafc312c07cbc2058b6224980506bc5866a04e4073\",\n    \"block_number\": \"26177975\",\n    \"captured_at\": \"2026-10-12T18:03:27Z\"\n  },\n  \"right_anchor\": {\n    \"block_hash\": \"0x29d210293990d54ba91744fafc312c07cbc2058b6224980506bc5866a04e4073\",\n    \"block_number\": \"26177975\",\n    \"captured_at\": \"2026-10-12T18:03:27Z\"\n  },\n  \"same_block_hash\": true,\n  \"schema\": \"ethereum-snapshot-compare/1\"\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-1/tools/snapshot-compare/snapshot_compare.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:30.945253+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

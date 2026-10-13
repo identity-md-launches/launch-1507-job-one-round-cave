@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"byteLength\": 46,\n  \"calldataSourceField\": \"data\",\n  \"fieldSpans\": [\n    {\n      \"endByteExclusive\": 3,\n      \"field\": \"chainId\",\n      \"startByte\": 2\n    },\n    {\n      \"endByteExclusive\": 4,\n      \"field\": \"nonce\",\n      \"startByte\": 3\n    },\n    {\n      \"endByteExclusive\": 9,\n      \"field\": \"maxPriorityFeePerGas\",\n      \"startByte\": 4\n    },\n    {\n      \"endByteExclusive\": 14,\n      \"field\": \"maxFeePerGas\",\n      \"startByte\": 9\n    },\n    {\n      \"endByteExclusive\": 18,\n      \"field\": \"gasLimit\",\n      \"startByte\": 14\n    },\n    {\n      \"endByteExclusive\": 39,\n      \"field\": \"to\",\n      \"startByte\": 18\n    },\n    {\n      \"endByteExclusive\": 40,\n      \"field\": \"value\",\n      \"startByte\": 39\n    },\n    {\n      \"endByteExclusive\": 45,\n      \"field\": \"data\",\n      \"startByte\": 40\n    },\n    {\n      \"endByteExclusive\": 46,\n      \"field\": \"accessList\",\n      \"startByte\": 45\n    }\n  ],\n  \"inspection\": {\n    \"calldata\": {\n      \"arguments\": {},\n      \"candidateMethod\": \"totalSupply\",\n      \"selector\": \"0x18160ddd\",\n      \"status\": \"abi-pattern-match\"\n    },\n    \"destinationLabel\": \"ZTO\",\n    \"feeBudget\": {\n      \"gasFeeCapWei\": \"200000000000000\",\n      \"meaning\": \"Gas limit times maximum fee per gas; excludes token transfers. Not an estimate.\",\n      \"valuePlusGasFeeCapWei\": \"200000000000000\"\n    },\n    \"transaction\": {\n      \"accessList\": [],\n      \"calldataSelector\": \"0x18160ddd\",\n      \"chainId\": \"1\",\n      \"data\": \"0x18160ddd\",\n      \"gasLimit\": \"100000\",\n      \"maxFeePerGas\": \"2000000000\",\n      \"maxPriorityFeePerGas\": \"1000000000\",\n      \"nonce\": \"0\",\n      \"to\": \"0xd782bdea4ef02a0bd391eb9089470c8080f0a68e\",\n      \"type\": \"EIP-1559\",\n      \"typeByte\": \"0x02\",\n      \"value\": \"0\"\n    },\n    \"warnings\": [\n      \"Offline inspection only: no chain state, simulation, sender or contract behavior verified.\",\n      \"Selectors can collide; an ABI pattern match does not prove ERC-20 behavior.\"\n    ]\n  },\n  \"schema\": \"canonical-envelope/v1\",\n  \"sha256Fingerprint\": \"106591983d34a682ebe28e41014d8a3157293293f229a4208f1c2079faf30d91\",\n  \"unsignedEnvelopeHex\": \"0x02ec0180843b9aca008477359400830186a094d782bdea4ef02a0bd391eb9089470c8080f0a68e808418160dddc0\"\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-3/tools/canonical-envelope/envelope.py",
+    "--demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:45.837624+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

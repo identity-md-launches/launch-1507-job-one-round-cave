@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\"bytes\": 47, \"deterministic\": true, \"files\": 2, \"sha256\": \"c4c6347ac82b95216670f9bbf88a8d2e9ff741721dd35d6113d8c25d0dddc524\", \"tampering_rejected\": true, \"verified\": true}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff/handoff.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:31.028666+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

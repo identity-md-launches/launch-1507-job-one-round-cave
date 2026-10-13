@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_bound_metadata (test_amount_view.AmountTests.test_bound_metadata) ... ok\ntest_cli_requirements_and_zero_decimals (test_amount_view.AmountTests.test_cli_requirements_and_zero_decimals) ... ok\ntest_demo_is_exact_approval (test_amount_view.AmountTests.test_demo_is_exact_approval) ... ok\ntest_extreme_decimals (test_amount_view.AmountTests.test_extreme_decimals) ... ok\ntest_invalid_metadata (test_amount_view.AmountTests.test_invalid_metadata) ... ok\ntest_invalid_numeric_types_and_bounds (test_amount_view.AmountTests.test_invalid_numeric_types_and_bounds) ... ok\ntest_max_approval_remains_flagged (test_amount_view.AmountTests.test_max_approval_remains_flagged) ... ok\ntest_no_amount_for_unknown_and_read_calls (test_amount_view.AmountTests.test_no_amount_for_unknown_and_read_calls) ... ok\ntest_one_smallest_unit (test_amount_view.AmountTests.test_one_smallest_unit) ... ok\ntest_seeded_exact_roundtrips (test_amount_view.AmountTests.test_seeded_exact_roundtrips) ... ok\ntest_signed_and_malformed_are_rejected (test_amount_view.AmountTests.test_signed_and_malformed_are_rejected) ... ok\ntest_transfer_and_transfer_from (test_amount_view.AmountTests.test_transfer_and_transfer_from) ... ok\ntest_zero_and_trailing_zeroes (test_amount_view.AmountTests.test_zero_and_trailing_zeroes) ... ok\ntest_zero_decimals_and_maximum (test_amount_view.AmountTests.test_zero_decimals_and_maximum) ... ok\n\n----------------------------------------------------------------------\nRan 14 tests in 0.010s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/amount-view",
+    "-p",
+    "test_amount_view.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 14,
+  "checked_at": "2026-10-13T05:30:18.735402+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

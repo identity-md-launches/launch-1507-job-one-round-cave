@@ -1,0 +1,13 @@
+{
+  "canonical_snapshot_sha256": "bad208b7cfa7ff8ae4123bf51465ff0a653d5cc9c5341b0aa967e5b0d577368c",
+  "evidence_limits": "Integrity receipt for bytes and the pinned snapshot structure; not a signature, proof of provider honesty, finality, or current state.",
+  "observation": {
+    "block_hash": "0x8cfc260577e274ca4737d9affbfc25ace1e195af07caf0ecc56d5b54e570aa7f",
+    "block_number": "26181423",
+    "token": "0xd782bdea4ef02a0bd391eb9089470c8080f0a68e",
+    "total_supply_base_units": "1000000000000000000000000000"
+  },
+  "schema": "pinned-zto-seal/1",
+  "snapshot_sha256": "b6d0a2cb31bc450ad1afda8b5f218d20f30aaf059afbf8aff1097f039d67111b",
+  "verified": true
+}

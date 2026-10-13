@@ -1,0 +1,15 @@
+{
+  "exit": 0,
+  "stdout": "{\n  \"archives\": [\n    {\n      \"bytes\": 13181,\n      \"files\": 2,\n      \"path\": \"line-2/handoff.zip\",\n      \"payload_bytes\": 12603,\n      \"sha256\": \"aaa03a258268263186f610e17ad8ede6851c8597b70a7ec29ae6b283f72f60bb\"\n    }\n  ],\n  \"demo\": \"real inherited archive cataloged and replayed in memory\",\n  \"format\": \"handoff-catalog-v1\",\n  \"note\": \"Archive integrity is not sender identity without independently trusted digests.\",\n  \"verified\": true\n}\n",
+  "stderr": "",
+  "command": [
+    "python3",
+    "-B",
+    "line-2/tools/handoff-catalog/catalog.py",
+    "demo"
+  ],
+  "kind": "demo",
+  "tests_run": 0,
+  "checked_at": "2026-10-13T05:30:32.167106+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

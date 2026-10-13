@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_access_list_order_and_duplicate_counts_retained (test_unsigned_diff.ComparisonTests.test_access_list_order_and_duplicate_counts_retained) ... ok\ntest_cli_difference_is_success_and_usage_is_controlled (test_unsigned_diff.ComparisonTests.test_cli_difference_is_success_and_usage_is_controlled) ... ok\ntest_contract_creation_destination_is_explicit (test_unsigned_diff.ComparisonTests.test_contract_creation_destination_is_explicit) ... ok\ntest_demo_reports_fee_change_and_exact_delta (test_unsigned_diff.ComparisonTests.test_demo_reports_fee_change_and_exact_delta) ... ok\ntest_each_unsigned_field_change_is_visible (test_unsigned_diff.ComparisonTests.test_each_unsigned_field_change_is_visible) ... ok\ntest_invalid_either_side_refuses_entire_report (test_unsigned_diff.ComparisonTests.test_invalid_either_side_refuses_entire_report) ... ok\ntest_negative_and_large_fee_deltas_remain_exact_strings (test_unsigned_diff.ComparisonTests.test_negative_and_large_fee_deltas_remain_exact_strings) ... ok\ntest_same_bytes_accept_hex_case_and_optional_prefix (test_unsigned_diff.ComparisonTests.test_same_bytes_accept_hex_case_and_optional_prefix) ... ok\ntest_same_selector_changed_approval_amount_not_hidden (test_unsigned_diff.ComparisonTests.test_same_selector_changed_approval_amount_not_hidden) ... ok\ntest_unknown_selector_and_trailing_bytes_compared_in_full (test_unsigned_diff.ComparisonTests.test_unknown_selector_and_trailing_bytes_compared_in_full) ... ok\n\n----------------------------------------------------------------------\nRan 10 tests in 0.006s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-3/tools/unsigned-diff",
+    "-p",
+    "test_unsigned_diff.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 10,
+  "checked_at": "2026-10-13T05:30:23.274824+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

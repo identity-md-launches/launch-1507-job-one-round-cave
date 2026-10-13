@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_boundary_and_bounded_read (test_snapshot_seal.SnapshotSealTests.test_boundary_and_bounded_read) ... ok\ntest_nonfinite_json_rejected (test_snapshot_seal.SnapshotSealTests.test_nonfinite_json_rejected) ... ok\ntest_refuses_fifo_without_opening_it (test_snapshot_seal.SnapshotSealTests.test_refuses_fifo_without_opening_it) ... ok\ntest_refuses_leaf_symlink_before_opening_leaf (test_snapshot_seal.SnapshotSealTests.test_refuses_leaf_symlink_before_opening_leaf) ... ok\ntest_refuses_outside_before_any_open (test_snapshot_seal.SnapshotSealTests.test_refuses_outside_before_any_open) ... ok\ntest_refuses_oversize_before_opening_leaf (test_snapshot_seal.SnapshotSealTests.test_refuses_oversize_before_opening_leaf) ... ok\ntest_refuses_symlink_directory (test_snapshot_seal.SnapshotSealTests.test_refuses_symlink_directory) ... ok\ntest_refuses_traversal_before_any_open (test_snapshot_seal.SnapshotSealTests.test_refuses_traversal_before_any_open) ... ok\ntest_rejects_duplicate_nested_keys (test_snapshot_seal.SnapshotSealTests.test_rejects_duplicate_nested_keys) ... ok\ntest_rejects_duplicate_receipt_keys (test_snapshot_seal.SnapshotSealTests.test_rejects_duplicate_receipt_keys) ... ok\ntest_rejects_duplicate_result_even_when_last_value_is_valid (test_snapshot_seal.SnapshotSealTests.test_rejects_duplicate_result_even_when_last_value_is_valid) ... ok\ntest_rejects_malformed_receipt_json (test_snapshot_seal.SnapshotSealTests.test_rejects_malformed_receipt_json) ... ok\ntest_rejects_non_pinned_snapshot (test_snapshot_seal.SnapshotSealTests.test_rejects_non_pinned_snapshot) ... ok\ntest_seal_is_deterministic_and_has_pinned_facts (test_snapshot_seal.SnapshotSealTests.test_seal_is_deterministic_and_has_pinned_facts) ... ok\ntest_verify_accepts_exact_receipt (test_snapshot_seal.SnapshotSealTests.test_verify_accepts_exact_receipt) ... ok\ntest_verify_rejects_changed_receipt (test_snapshot_seal.SnapshotSealTests.test_verify_rejects_changed_receipt) ... ok\ntest_whitespace_changes_exact_digest_only (test_snapshot_seal.SnapshotSealTests.test_whitespace_changes_exact_digest_only) ... ok\n\n----------------------------------------------------------------------\nRan 17 tests in 0.048s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/snapshot-seal",
+    "-p",
+    "test_snapshot_seal.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 17,
+  "checked_at": "2026-10-13T05:30:09.791632+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}

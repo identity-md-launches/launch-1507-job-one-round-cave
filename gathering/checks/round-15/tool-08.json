@@ -1,0 +1,21 @@
+{
+  "exit": 0,
+  "stdout": "",
+  "stderr": "test_forbidden_methods_never_open_network (test_checks.Checks.test_forbidden_methods_never_open_network) ... ok\ntest_malformed_response (test_checks.Checks.test_malformed_response) ... ok\ntest_null_response_cli_controlled (test_checks.Checks.test_null_response_cli_controlled) ... ok\ntest_offline_summary (test_checks.Checks.test_offline_summary) ... ok\ntest_parameter_validation (test_checks.Checks.test_parameter_validation) ... ok\ntest_response_limit (test_checks.Checks.test_response_limit) ... ok\n\n----------------------------------------------------------------------\nRan 6 tests in 0.024s\n\nOK\n",
+  "command": [
+    "python3",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "line-1/tools/snapshot-check",
+    "-p",
+    "test_checks.py",
+    "-v"
+  ],
+  "kind": "suite",
+  "tests_run": 6,
+  "checked_at": "2026-10-13T05:30:08.208505+00:00",
+  "workspace": "test/scratch/round-15-mirror"
+}
