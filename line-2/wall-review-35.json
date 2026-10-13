@@ -1,0 +1,42 @@
+{
+  "step": 35,
+  "ancestor_sha256": "82f449b64789a355e21770bdb6c40ee4519042db7685abe105e53506e62f8ab7",
+  "wall_sha256": "94bfbe82a83a2b325b5404b4929ef4c4489a07a58962a4b9f79ffdc04c278b32",
+  "wall": {
+    "paths": [
+      "artifacts/line-2/wall.png",
+      "artifacts/line-2/wall-v16.png"
+    ],
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "format": "PNG",
+    "mode": "8-bit RGB opaque"
+  },
+  "thumbnail": {
+    "path": "dist/line-2/35.jpg",
+    "dimensions": [
+      512,
+      512
+    ],
+    "format": "baseline JPEG",
+    "bytes": 75375
+  },
+  "mark_rectangle": [
+    120,
+    230,
+    110,
+    160
+  ],
+  "changed_pixels": 4358,
+  "changed_pixels_outside_rectangle": 0,
+  "generator": "installed gpt-image-1-mini",
+  "visual_review": "Inspected final PNG and 512px JPEG. Pepe retains his wide mouth and heavy-lidded eyes; both inherited hands each have four fingers and one thumb (five digits). No hands added. No letters, numbers, captions, signatures, logos, watermarks, borders, frames, real people or political/hateful symbols observed. Original framing, rock, cracks and lighting retained outside the small pigment addition.",
+  "unmet_visual_requirements": [],
+  "limitations": [
+    "Local visual inspection is not independent artistic certification.",
+    "Inherited rock texture is preserved, including its photographic appearance.",
+    "The charcoal bowl is subtle on the darker left rock, especially at thumbnail size."
+  ]
+}

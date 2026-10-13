@@ -234,6 +234,100 @@ class ReviewTests(unittest.TestCase):
             self.assertTrue(result["selected_checks_passed"])
             self.assertEqual(reader.call_count, 1)
 
+    def test_landing_skipped_and_fresh_destination_not_created(self):
+        result = R.review_bytes(self.data)
+        self.assertEqual(result["checks"]["landing"],
+                         {"status": "not-requested", "receipt": None})
+        destination = self.root / "fresh"
+        result = R.review_bytes(self.data, destination=str(destination))
+        self.assertTrue(result["selected_checks_passed"])
+        self.assertEqual(result["checks"]["landing"]["status"], "pass")
+        self.assertFalse(destination.exists())
+
+    def test_occupied_destination_fails_only_landing(self):
+        before = {p: p.read_bytes() for p in self.source.rglob("*") if p.is_file()}
+        result = R.review_bytes(self.data, str(self.source), destination=str(self.source))
+        self.assertEqual(result["failed_checks"], ["landing"])
+        self.assertEqual(result["checks"]["source"]["status"], "pass")
+        self.assertEqual(result["checks"]["landing"]["status"], "difference")
+        self.assertEqual(before, {p: p.read_bytes() for p in before})
+
+    def test_landing_name_alias_and_symlink_diagnostics(self):
+        destination = self.root / "Source"
+        result = R.review_bytes(self.data, destination=str(destination))
+        issues = result["checks"]["landing"]["receipt"]["path_issues"]
+        self.assertEqual({i["kind"] for i in issues}, {"existing-name-collision"})
+        link = self.root / "linked"
+        link.symlink_to("source", target_is_directory=True)
+        result = R.review_bytes(self.data, destination=str(link))
+        self.assertEqual(result["failed_checks"], ["landing"])
+        self.assertEqual({i["kind"] for i in result["checks"]["landing"]["receipt"]["path_issues"]},
+                         {"symlink-at-leaf"})
+
+    def test_landing_retains_other_differences(self):
+        data = altered(R.WRITER.build({"CON.txt": b"public"}), comment=b"different")
+        result = R.review_bytes(data, str(self.source), expectation_data=self.expectation(),
+                                destination=str(self.root / "fresh"))
+        self.assertEqual(result["failed_checks"],
+                         ["reproduction", "portability", "source", "content", "landing"])
+
+    def test_landing_uses_captured_receipt_without_reopening_archive(self):
+        original = R.WRITER.regular_bytes
+        def replace_after_read(path, limit):
+            data = original(path, limit)
+            self.archive.write_bytes(b"invalid replacement")
+            return data
+        with patch.object(R.WRITER, "regular_bytes", side_effect=replace_after_read) as reader, \
+                patch.object(R.LANDING, "plan", side_effect=AssertionError("reopened archive")), \
+                patch.object(R.LANDING, "plan_receipt", wraps=R.LANDING.plan_receipt) as planner:
+            result = R.review_path(str(self.archive), destination=str(self.root / "fresh"))
+        self.assertEqual(reader.call_count, 1)
+        self.assertEqual(planner.call_count, 1)
+        self.assertTrue(result["selected_checks_passed"])
+        self.assertEqual(result["archive_sha256"],
+                         result["checks"]["landing"]["receipt"]["archive_sha256"])
+        self.assertEqual(result["archive_sha256"], R.WRITER.digest(self.data))
+
+    def test_unsafe_destination_refused_before_archive_read(self):
+        for destination in ("../outside", "/outside", "", "a/../b", "a\\b"):
+            with patch.object(R.WRITER, "regular_bytes") as reader, \
+                    patch.object(R.LANDING, "plan_receipt") as planner:
+                with self.assertRaises(ValueError):
+                    R.review_path(str(self.archive), destination=destination)
+                reader.assert_not_called()
+                planner.assert_not_called()
+
+    def test_corrupt_archive_prevents_landing_scan(self):
+        with patch.object(R.LANDING, "plan_receipt") as planner:
+            with self.assertRaises(ValueError):
+                R.review_bytes(altered(self.data, corrupt=True),
+                               destination=str(self.root / "fresh"))
+            planner.assert_not_called()
+
+    def test_landing_scan_limit_refuses_review(self):
+        def bounded(receipt, destination):
+            return original(receipt, destination, max_names=1, max_directory_names=1)
+        original = R.LANDING.plan_receipt
+        with patch.object(R.LANDING, "plan_receipt", side_effect=bounded):
+            with self.assertRaisesRegex(ValueError, "scan exceeds limit"):
+                R.review_bytes(self.data, destination=str(self.root / "fresh"))
+
+    def test_landing_cli_statuses(self):
+        command = [sys.executable, "-B", "line-2/tools/handoff-review/review.py", "check",
+                   str(self.archive), "--destination"]
+        for destination, status in ((str(self.root / "fresh"), 0),
+                                    (str(self.source), 2), ("../outside", 1)):
+            result = subprocess.run(command + [destination], capture_output=True, text=True)
+            self.assertEqual(result.returncode, status, result.stderr)
+            if status == 1:
+                self.assertEqual(result.stdout, "")
+                self.assertIn("handoff-review:", result.stderr)
+            else:
+                report = json.loads(result.stdout)
+                self.assertEqual(report["checks"]["landing"]["status"],
+                                 "pass" if status == 0 else "difference")
+        self.assertFalse((self.root / "fresh").exists())
+
     def test_archive_replacement_after_snapshot(self):
         original = R.WRITER.regular_bytes
         def read_then_replace(path, limit):

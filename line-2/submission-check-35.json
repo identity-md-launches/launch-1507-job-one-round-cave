@@ -1,0 +1,25 @@
+{
+  "step": 35,
+  "passed": true,
+  "goal_unchanged_exactly": true,
+  "older_records_unchanged": 34,
+  "record_count": 35,
+  "record_schema_and_digest": "pass",
+  "wall_dimensions": [
+    1254,
+    1254
+  ],
+  "wall_format": "8-bit RGB PNG",
+  "thumbnail_dimensions": [
+    512,
+    512
+  ],
+  "thumbnail_format": "baseline JPEG",
+  "thumbnail_bytes": 75375,
+  "outputs_identical": true,
+  "named_wall_untracked": true,
+  "change_scope": "line-2 and dist/line-2 only; required PNGs in artifacts/line-2",
+  "new_files_under_100KB_outside_artifacts": true,
+  "known_unmet_visual_requirements": [],
+  "tool_sha256": "ddcef25d8b26e24da874d2e0f1da53dd50a106c10305fe7ed27ae1030db206b8"
+}

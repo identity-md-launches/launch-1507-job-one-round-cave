@@ -1,0 +1,30 @@
+{
+  "name": "The Ready Bowl",
+  "image": "https://api.imd.fun/artifacts/94bfbe82a83a2b325b5404b4929ef4c4489a07a58962a4b9f79ffdc04c278b32",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 2"
+    },
+    {
+      "trait_type": "Number",
+      "value": 35
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "handoff-review"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "A reed bundle rests in a receiving bowl whose opening has been checked before the handoff."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "reproducible offline-verifiable worker handoffs"
+    }
+  ]
+}

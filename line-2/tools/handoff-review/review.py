@@ -27,11 +27,13 @@ REPRODUCE = load("handoff_review_reproduce", "line-2/tools/handoff-reproduce/rep
 PORTABILITY = load("handoff_review_portability", "line-2/tools/handoff-portability/portability.py")
 SOURCE = load("handoff_review_source", "line-2/tools/handoff-source/source_check.py")
 CONTENT = load("handoff_review_content", "line-2/tools/handoff-content/content.py")
+LANDING = load("handoff_review_landing", "line-2/tools/handoff-landing/landing.py")
 INSPECT = REPRODUCE.INSPECT
 WRITER = REPRODUCE.WRITER
 
 
-def review_bytes(data, source=None, expected=None, limits=None, expectation_data=None):
+def review_bytes(data, source=None, expected=None, limits=None, expectation_data=None,
+                 destination=None):
     """Refuse invalid bytes; retain every diagnostic for valid differing archives.
 
     Source scans compare against this same snapshot's receipt. No archive path
@@ -39,6 +41,8 @@ def review_bytes(data, source=None, expected=None, limits=None, expectation_data
     """
     limits = limits or INSPECT.Limits()
     limits.validate()
+    if destination is not None:
+        LANDING.destination_parts(destination)
     if not isinstance(data, (bytes, bytearray)):
         raise ValueError("archive snapshot must be bytes")
     if len(data) > limits.archive_bytes:
@@ -58,6 +62,8 @@ def review_bytes(data, source=None, expected=None, limits=None, expectation_data
     if source is not None:
         files = SOURCE.source_receipt(source, INSPECT, limits)
         source_result = SOURCE.compare(receipt, files)
+    landing_result = (None if destination is None else
+                      LANDING.plan_receipt(receipt, destination))
     failed = []
     if not reproduction["byte_reproducible"]:
         failed.append("reproduction")
@@ -67,6 +73,8 @@ def review_bytes(data, source=None, expected=None, limits=None, expectation_data
         failed.append("source")
     if content_result is not None and not content_result["content_passed"]:
         failed.append("content")
+    if landing_result is not None and not landing_result["ready"]:
+        failed.append("landing")
     return {
         "format": "handoff-review-v1",
         "selected_checks_passed": not failed,
@@ -89,29 +97,38 @@ def review_bytes(data, source=None, expected=None, limits=None, expectation_data
             "content": {"status": "not-requested" if content_result is None else
                         ("pass" if content_result["content_passed"] else "difference"),
                         "receipt": content_result},
+            "landing": {"status": "not-requested" if landing_result is None else
+                        ("pass" if landing_result["ready"] else "difference"),
+                        "receipt": landing_result},
         },
         "note": "Selected format checks only: no sender authentication, payload safety "
                 "assessment, build reproduction or extraction test. Source scans require "
                 "a stable workspace and are not atomic snapshots. Content expectations "
-                "must be independently trusted to identify the intended revision.",
+                "must be independently trusted to identify the intended revision. Landing "
+                "is a bounded, read-only metadata check at one instant, not a reservation; "
+                "no destination files are read or written.",
     }
 
 
-def review_path(archive, source=None, expected=None, limits=None, expectation=None):
+def review_path(archive, source=None, expected=None, limits=None, expectation=None,
+                destination=None):
     limits = limits or INSPECT.Limits()
     limits.validate()
+    if destination is not None:
+        LANDING.destination_parts(destination)
     expectation_data = None
     if expectation is not None:
         expectation_data = CONTENT.read_expectation(expectation)
         CONTENT.parse_expectation(expectation_data)
     # Read once, with a hard budget and no intentional symlink following.
     data = WRITER.regular_bytes(WRITER.workspace_path(archive), limits.archive_bytes)
-    return review_bytes(data, source, expected, limits, expectation_data)
+    return review_bytes(data, source, expected, limits, expectation_data, destination)
 
 
 def demo():
     result = review_path("line-2/handoff.zip", "line-2/tools/handoff",
-                        expectation="line-2/tools/handoff-content/inherited-content.json")
+                        expectation="line-2/tools/handoff-content/inherited-content.json",
+                        destination="line-2/tools/handoff-review/unpacked-demo")
     if not result["selected_checks_passed"]:
         raise ValueError("the inherited handoff failed its selected checks")
     result["demo"] = "actual inherited archive and source; no files written"
@@ -126,6 +143,7 @@ def main(argv=None):
     check.add_argument("archive", help="relative workspace HANDOFF v1 ZIP")
     check.add_argument("--source", help="optional relative workspace source directory")
     check.add_argument("--expectation", help="separately retained content-expectation JSON")
+    check.add_argument("--destination", help="optional workspace-relative landing directory; read only")
     check.add_argument("--sha256", help="independently obtained archive SHA-256")
     check.add_argument("--max-archive-bytes", type=INSPECT.positive, default=INSPECT.Limits.archive_bytes)
     check.add_argument("--max-payload-bytes", type=INSPECT.positive, default=INSPECT.Limits.payload_bytes)
@@ -137,7 +155,8 @@ def main(argv=None):
         else:
             limits = INSPECT.Limits(archive_bytes=args.max_archive_bytes,
                                     payload_bytes=args.max_payload_bytes, files=args.max_files)
-            result = review_path(args.archive, args.source, args.sha256, limits, args.expectation)
+            result = review_path(args.archive, args.source, args.sha256, limits,
+                                 args.expectation, args.destination)
         print(json.dumps(result, sort_keys=True, indent=2, ensure_ascii=True))
         return 0 if result["selected_checks_passed"] else 2
     except (OSError, ValueError, TypeError, UnicodeError, RecursionError,
