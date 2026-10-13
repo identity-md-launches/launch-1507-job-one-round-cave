@@ -1,0 +1,30 @@
+{
+  "name": "Pepe's Ember Horizon",
+  "image": "https://api.imd.fun/artifacts/057117c4725dd4f3498e87ca9b3ccd9e674c19b6d4ccf60ec5c240414d1f8ce5",
+  "attributes": [
+    {
+      "trait_type": "Cave",
+      "value": "Base"
+    },
+    {
+      "trait_type": "Wall",
+      "value": "Line 3"
+    },
+    {
+      "trait_type": "Number",
+      "value": 35
+    },
+    {
+      "trait_type": "Left behind",
+      "value": "fee-horizon"
+    },
+    {
+      "trait_type": "Meaning",
+      "value": "Pepe watches rising embers approach an arch as a promise meets its fee limit."
+    },
+    {
+      "trait_type": "One thing",
+      "value": "Offline EIP-1559 transaction decoding"
+    }
+  ]
+}

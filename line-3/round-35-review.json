@@ -1,0 +1,48 @@
+{
+  "wall": {
+    "paths": [
+      "artifacts/line-3/wall-v16.png",
+      "artifacts/line-3/wall.png"
+    ],
+    "width": 1254,
+    "height": 1254,
+    "format": "PNG",
+    "mode": "RGB",
+    "bytes": 3969727,
+    "sha256": "057117c4725dd4f3498e87ca9b3ccd9e674c19b6d4ccf60ec5c240414d1f8ce5"
+  },
+  "thumbnail": {
+    "path": "dist/line-3/35.jpg",
+    "width": 512,
+    "height": 512,
+    "format": "JPEG",
+    "bytes": 74885
+  },
+  "preservation": {
+    "inheritedSha256": "48a8a3fddc5883b0a630e2686591084b863e7a0790d45348f203508d9d4f9da7",
+    "editRectangleXYXY": [
+      710,
+      160,
+      910,
+      280
+    ],
+    "changedPixels": 6864,
+    "changedPixelsOutsideRectangle": 0
+  },
+  "cutout": {
+    "width": 1536,
+    "height": 1024,
+    "format": "PNG",
+    "mode": "RGBA"
+  },
+  "visualReview": {
+    "reviewed": true,
+    "method": "Manual inspection of the full PNG and 512-pixel JPEG",
+    "mark": "Small worn ochre embers rising beneath a charcoal arch on vacant upper rock",
+    "hands": "Inherited Pepe retains two five-digit hands; no new hand or stencil was added",
+    "ancestors": "Pepe, older marks, rock, cracks, torchlight and framing remain; no pixel outside the new mark rectangle changed",
+    "prohibitedContent": "No letters, numbers, captions, signatures, logos, watermarks, borders, real people or political or hateful symbols observed",
+    "limits": "Inherited rock has photographic-looking depth, retained as required; local visual review is not independent artistic certification"
+  },
+  "unmetVisualRequirements": []
+}

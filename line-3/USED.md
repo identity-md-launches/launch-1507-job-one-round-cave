@@ -139,3 +139,19 @@
   and required wall-v15 PNGs, record 34, its 512-pixel JPEG and visual review.
   The goal and all older records remain unchanged; no extra picture was saved
   in the workspace.
+
+- Round 35: reused the unchanged `fee-context`, `rpc-unsigned-reader`,
+  `erc20-intent` and `zto-eip1559-decoder` modules for `fee-horizon`. It reads
+  original unsigned type-2 RLP or complete JSON, then models exact EIP-1559
+  integer base-fee steps for hypothetical empty and twice-target parents from
+  a caller-supplied fee. Seven new behavioral tests and the ZTO demo passed.
+  The tool uses only committed standard-library Python and no live state,
+  environment, key, wallet, signing, sending, payment or public post.
+- Recovered record 34's exact wall from its public artifact URL, verified the
+  hash, and used the built-in image tool for a transparent ochre ember motif.
+  Reused the inspected standard-library PNG/JPEG helpers without modifying
+  them. Confined the composite to vacant `(710,160)-(910,280)` rock: 6,864
+  changed pixels, zero outside. Delivered identical continuing and required
+  wall-v16 PNGs, record 35, its 512-pixel JPEG and visual review. The goal and
+  all earlier records remain unchanged; no extra picture was saved in the
+  workspace.
